@@ -25,6 +25,7 @@ struct ClinicalTrialView: View {
             VStack(spacing: 15) {
                 
                 navBar
+                    .padding()
                 
                 Spacer()
                 
@@ -51,72 +52,13 @@ struct ClinicalTrialView: View {
                         Nail(rotationDegree: 126)
                     }
                 }
+                .padding()
                 
                 Spacer()
                 
-                // Bulbs
-                HStack {
-                    ForEach(1...5, id: \.self) { i in
-                        Bulb(isOn: trialVM.progress >= i * 20)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                    }
-                }
-                .padding(.horizontal, 20)
-                
-                Spacer()
-                
-                // Bottom Buttons
-                HStack(spacing: 20) {
-                    Button {
-                        trialVM.bless()
-                    } label: {
-                        Text("Possess")
-                            .font(Font.system(size: 20, design: .monospaced))
-                            .fontWeight(.semibold)
-                            .opacity(0)
-                            .overlay(
-                                Text("Bless")
-                                    .font(Font.system(size: 20, design: .monospaced))
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(Color.custom(.PssssdBackgroundColor))
-                            )
-                            .padding(.horizontal, 25)
-                            .padding(.vertical, 15)
-                            .background(
-                                RoundedRectangle(cornerRadius: 5)
-                                    .fill((trialVM.play && !trialVM.isLoading) ? Color.custom(.PsssdGreen) : Color(#colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1)))
-                                    .shadow(color: Color.black.opacity(0.6), radius: 0, x: 7, y: 7)
-                            )
-                        
-                    }
-//                    .disabled(trialVM.isLoading)
-                    
-                    Button {
-                        trialVM.possess()
-                    } label: {
-                        Text("Possess")
-                            .font(Font.system(size: 20, design: .monospaced))
-                            .fontWeight(.semibold)
-                            .opacity(0)
-                            .overlay(
-                                Text("Possess")
-                                    .font(Font.system(size: 20, design: .monospaced))
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(Color.custom(.PssssdBackgroundColor))
-                            )
-                            .padding(.horizontal, 25)
-                            .padding(.vertical, 15)
-                            .background(
-                                RoundedRectangle(cornerRadius: 5)
-                                    .fill((!trialVM.play && !trialVM.isLoading) ? Color.custom(.PsssdOrange) : Color(#colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1)))
-                                    .shadow(color: Color.black.opacity(0.6), radius: 0, x: 7, y: 7)
-                            )
-                    }
-//                    .disabled(trialVM.isLoading)
-                }
+                ControlPanel(trialVM: trialVM)
 
             }
-            .padding()
             
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -171,5 +113,55 @@ struct LabWindow: View {
                     .strokeBorder(style: StrokeStyle(lineWidth: 3, lineCap: CGLineCap.butt, dash: [5], dashPhase: 2))
                     .foregroundColor(Color.black.opacity(0.8))
             )
+    }
+}
+
+struct ControlPanel: View {
+    @ObservedObject var trialVM: ClinicalTrialVM
+    
+    var body: some View {
+        VStack(spacing: 30) {
+            // Bulbs
+            HStack {
+                ForEach(1...5, id: \.self) { i in
+                    Bulb(isOn: trialVM.progress >= i * 20)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
+            }
+            .padding(.horizontal, 20)
+            
+            
+            // Buttons
+            HStack(spacing: 20) {
+                Button {
+                    trialVM.bless()
+                } label: {
+                    PanelButton(isActive: (trialVM.play && !trialVM.isLoading), text: "Bless", mainColor: Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)), borderColor: Color(#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)))
+                    
+                }
+                
+                Button {
+                    trialVM.possess()
+                } label: {
+                    PanelButton(isActive: (!trialVM.play && !trialVM.isLoading), text: "Possess", mainColor: Color.custom(.PsssdOrange), borderColor: Color(#colorLiteral(red: 0.7002227475, green: 0.2855848451, blue: 0.008770696605, alpha: 1)))
+                }
+            }
+        }
+        .padding(.vertical, 15)
+        .padding(.horizontal, 40)
+        .padding(.bottom, 15)
+        .rotation3DEffect(.degrees(30), axis: (x: 1, y: 0, z: 0))
+        .background(
+            RoundedRectangle(cornerRadius: 7.5)
+                .fill(Color.custom(.PssssdTextColor)).rotation3DEffect(.degrees(30), axis: (x: 1, y: 0, z: 0))
+                .shadow(color: Color.black.opacity(0.3), radius: 0, x: 0, y: 4)
+        )
+        .padding(.bottom, 10)
+        .background(
+            Rectangle()
+                .fill(Color.custom(.PssssdInstrumentColor))
+                .rotation3DEffect(.degrees(30), axis: (x: 1, y: 0, z: 0))
+                .ignoresSafeArea(.all)
+        )
     }
 }

@@ -42,7 +42,7 @@ struct AboutView: View {
                             .font(Font.system(size: 20, design: .monospaced))
                             .fontWeight(.semibold)
                         
-                        Text("I'm not a part of [The Possessed](https://pssssd.xyz/) team and this is not an official app from the team.")
+                        Text("I'm NOT a part of [The Possessed](https://pssssd.xyz/) team and this is NOT an official app from the team.")
                             .font(Font.system(size: 20, design: .monospaced))
                             .fontWeight(.semibold)
                         
