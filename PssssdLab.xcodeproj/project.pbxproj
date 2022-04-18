@@ -7,16 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023325FB280DD58A000FC931 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023325FA280DD58A000FC931 /* CustomShape.swift */; };
+		02540464280AE34000E4CC47 /* TouchesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540463280AE34000E4CC47 /* TouchesHandler.swift */; };
+		0254046A280B061000E4CC47 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540469280B061000E4CC47 /* TestSubject.swift */; };
+		0254046D280B066100E4CC47 /* Nail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254046C280B066100E4CC47 /* Nail.swift */; };
+		0254046F280B066B00E4CC47 /* Bulb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254046E280B066B00E4CC47 /* Bulb.swift */; };
+		02540471280B068A00E4CC47 /* TitleBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540470280B068A00E4CC47 /* TitleBoard.swift */; };
+		02540479280B14B500E4CC47 /* WaitingRoomVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540478280B14B500E4CC47 /* WaitingRoomVM.swift */; };
+		0254047B280B14C000E4CC47 /* ClinicalTrialVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254047A280B14C000E4CC47 /* ClinicalTrialVM.swift */; };
+		0254047D280B1D2B00E4CC47 /* NavBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254047C280B1D2B00E4CC47 /* NavBarIcon.swift */; };
+		02540493280B307E00E4CC47 /* TestSubject2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0254048A280B307C00E4CC47 /* TestSubject2.mp4 */; };
+		02540494280B307E00E4CC47 /* TestSubject3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0254048B280B307C00E4CC47 /* TestSubject3.mp4 */; };
+		02540495280B307E00E4CC47 /* TestSubject4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0254048C280B307C00E4CC47 /* TestSubject4.mp4 */; };
+		02540496280B307E00E4CC47 /* TestSubject7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0254048D280B307C00E4CC47 /* TestSubject7.mp4 */; };
+		02540497280B307E00E4CC47 /* TestSubject8.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0254048E280B307D00E4CC47 /* TestSubject8.mp4 */; };
+		02540498280B307E00E4CC47 /* TestSubject9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0254048F280B307D00E4CC47 /* TestSubject9.mp4 */; };
+		02540499280B307E00E4CC47 /* TestSubject5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02540490280B307D00E4CC47 /* TestSubject5.mp4 */; };
+		0254049A280B307E00E4CC47 /* TestSubject1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02540491280B307D00E4CC47 /* TestSubject1.mp4 */; };
+		0254049B280B307E00E4CC47 /* TestSubject6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02540492280B307E00E4CC47 /* TestSubject6.mp4 */; };
+		0254049D280B337100E4CC47 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254049C280B337100E4CC47 /* AboutView.swift */; };
+		02633BB6280A78970057DB66 /* VideoPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 02633BB5280A78970057DB66 /* VideoPlayer */; };
+		02633BB9280A79390057DB66 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 02633BB8280A79390057DB66 /* ConfettiSwiftUI */; };
+		02633BC1280A86C20057DB66 /* ColorsAndFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC0280A86C20057DB66 /* ColorsAndFonts.swift */; };
+		02633BC3280A88C30057DB66 /* BureauGrotRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02633BC2280A88C30057DB66 /* BureauGrotRegular.otf */; };
+		02633BC8280AC05F0057DB66 /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC7280AC05E0057DB66 /* WaitingRoomView.swift */; };
+		02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */; };
 		02DA7CCB280A70ED00FEAFD5 /* PssssdLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */; };
-		02DA7CCD280A70ED00FEAFD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA7CCC280A70ED00FEAFD5 /* ContentView.swift */; };
 		02DA7CCF280A70EF00FEAFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */; };
 		02DA7CD2280A70EF00FEAFD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DA7CD1280A70EF00FEAFD5 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02DA7CC7280A70ED00FEAFD5 /* PssssdLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PssssdLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		023325FA280DD58A000FC931 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		02540463280AE34000E4CC47 /* TouchesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchesHandler.swift; sourceTree = "<group>"; };
+		02540469280B061000E4CC47 /* TestSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubject.swift; sourceTree = "<group>"; };
+		0254046C280B066100E4CC47 /* Nail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nail.swift; sourceTree = "<group>"; };
+		0254046E280B066B00E4CC47 /* Bulb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulb.swift; sourceTree = "<group>"; };
+		02540470280B068A00E4CC47 /* TitleBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBoard.swift; sourceTree = "<group>"; };
+		02540478280B14B500E4CC47 /* WaitingRoomVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomVM.swift; sourceTree = "<group>"; };
+		0254047A280B14C000E4CC47 /* ClinicalTrialVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialVM.swift; sourceTree = "<group>"; };
+		0254047C280B1D2B00E4CC47 /* NavBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarIcon.swift; sourceTree = "<group>"; };
+		0254048A280B307C00E4CC47 /* TestSubject2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject2.mp4; sourceTree = "<group>"; };
+		0254048B280B307C00E4CC47 /* TestSubject3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject3.mp4; sourceTree = "<group>"; };
+		0254048C280B307C00E4CC47 /* TestSubject4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject4.mp4; sourceTree = "<group>"; };
+		0254048D280B307C00E4CC47 /* TestSubject7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject7.mp4; sourceTree = "<group>"; };
+		0254048E280B307D00E4CC47 /* TestSubject8.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject8.mp4; sourceTree = "<group>"; };
+		0254048F280B307D00E4CC47 /* TestSubject9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject9.mp4; sourceTree = "<group>"; };
+		02540490280B307D00E4CC47 /* TestSubject5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject5.mp4; sourceTree = "<group>"; };
+		02540491280B307D00E4CC47 /* TestSubject1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject1.mp4; sourceTree = "<group>"; };
+		02540492280B307E00E4CC47 /* TestSubject6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject6.mp4; sourceTree = "<group>"; };
+		0254049C280B337100E4CC47 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		02633BC0280A86C20057DB66 /* ColorsAndFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsAndFonts.swift; sourceTree = "<group>"; };
+		02633BC2280A88C30057DB66 /* BureauGrotRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BureauGrotRegular.otf; sourceTree = "<group>"; };
+		02633BC4280A88FB0057DB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		02633BC7280AC05E0057DB66 /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
+		02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialView.swift; sourceTree = "<group>"; };
+		02DA7CC7280A70ED00FEAFD5 /* pssssd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pssssd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PssssdLabApp.swift; sourceTree = "<group>"; };
-		02DA7CCC280A70ED00FEAFD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02DA7CD1280A70EF00FEAFD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,12 +73,95 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02633BB9280A79390057DB66 /* ConfettiSwiftUI in Frameworks */,
+				02633BB6280A78970057DB66 /* VideoPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024A8098280A778100DDC58D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				02633BC2280A88C30057DB66 /* BureauGrotRegular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		02540465280B058B00E4CC47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0254046B280B064A00E4CC47 /* Shared */,
+				02633BC7280AC05E0057DB66 /* WaitingRoomView.swift */,
+				02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */,
+				0254049C280B337100E4CC47 /* AboutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02540466280B059200E4CC47 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				02540478280B14B500E4CC47 /* WaitingRoomVM.swift */,
+				0254047A280B14C000E4CC47 /* ClinicalTrialVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		02540467280B05A800E4CC47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02540469280B061000E4CC47 /* TestSubject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02540468280B05F900E4CC47 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0254046B280B064A00E4CC47 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0254046C280B066100E4CC47 /* Nail.swift */,
+				0254046E280B066B00E4CC47 /* Bulb.swift */,
+				02540470280B068A00E4CC47 /* TitleBoard.swift */,
+				0254047C280B1D2B00E4CC47 /* NavBarIcon.swift */,
+				023325FA280DD58A000FC931 /* CustomShape.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		02633BBA280A7B690057DB66 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				02633BC0280A86C20057DB66 /* ColorsAndFonts.swift */,
+				02540463280AE34000E4CC47 /* TouchesHandler.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		02633BBF280A80600057DB66 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				02540491280B307D00E4CC47 /* TestSubject1.mp4 */,
+				0254048A280B307C00E4CC47 /* TestSubject2.mp4 */,
+				0254048B280B307C00E4CC47 /* TestSubject3.mp4 */,
+				0254048C280B307C00E4CC47 /* TestSubject4.mp4 */,
+				02540490280B307D00E4CC47 /* TestSubject5.mp4 */,
+				02540492280B307E00E4CC47 /* TestSubject6.mp4 */,
+				0254048D280B307C00E4CC47 /* TestSubject7.mp4 */,
+				0254048E280B307D00E4CC47 /* TestSubject8.mp4 */,
+				0254048F280B307D00E4CC47 /* TestSubject9.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		02DA7CBE280A70ED00FEAFD5 = {
 			isa = PBXGroup;
 			children = (
@@ -43,7 +173,7 @@
 		02DA7CC8280A70ED00FEAFD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02DA7CC7280A70ED00FEAFD5 /* PssssdLab.app */,
+				02DA7CC7280A70ED00FEAFD5 /* pssssd.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +181,14 @@
 		02DA7CC9280A70ED00FEAFD5 /* PssssdLab */ = {
 			isa = PBXGroup;
 			children = (
-				02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */,
-				02DA7CCC280A70ED00FEAFD5 /* ContentView.swift */,
+				02633BC4280A88FB0057DB66 /* Info.plist */,
+				02540468280B05F900E4CC47 /* App */,
+				02540467280B05A800E4CC47 /* Models */,
+				02540466280B059200E4CC47 /* ViewModels */,
+				02540465280B058B00E4CC47 /* Views */,
+				02633BBF280A80600057DB66 /* Videos */,
+				024A8098280A778100DDC58D /* Fonts */,
+				02633BBA280A7B690057DB66 /* Support */,
 				02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */,
 				02DA7CD0280A70EF00FEAFD5 /* Preview Content */,
 			);
@@ -83,8 +219,12 @@
 			dependencies = (
 			);
 			name = PssssdLab;
+			packageProductDependencies = (
+				02633BB5280A78970057DB66 /* VideoPlayer */,
+				02633BB8280A79390057DB66 /* ConfettiSwiftUI */,
+			);
 			productName = PssssdLab;
-			productReference = 02DA7CC7280A70ED00FEAFD5 /* PssssdLab.app */;
+			productReference = 02DA7CC7280A70ED00FEAFD5 /* pssssd.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,6 +251,10 @@
 				Base,
 			);
 			mainGroup = 02DA7CBE280A70ED00FEAFD5;
+			packageReferences = (
+				02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
+				02633BB7280A79390057DB66 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 02DA7CC8280A70ED00FEAFD5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +269,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02540493280B307E00E4CC47 /* TestSubject2.mp4 in Resources */,
+				02540494280B307E00E4CC47 /* TestSubject3.mp4 in Resources */,
+				02540495280B307E00E4CC47 /* TestSubject4.mp4 in Resources */,
+				02540496280B307E00E4CC47 /* TestSubject7.mp4 in Resources */,
+				02540497280B307E00E4CC47 /* TestSubject8.mp4 in Resources */,
+				02540498280B307E00E4CC47 /* TestSubject9.mp4 in Resources */,
+				02540499280B307E00E4CC47 /* TestSubject5.mp4 in Resources */,
+				0254049A280B307E00E4CC47 /* TestSubject1.mp4 in Resources */,
+				0254049B280B307E00E4CC47 /* TestSubject6.mp4 in Resources */,
 				02DA7CD2280A70EF00FEAFD5 /* Preview Assets.xcassets in Resources */,
+				02633BC3280A88C30057DB66 /* BureauGrotRegular.otf in Resources */,
 				02DA7CCF280A70EF00FEAFD5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +291,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02DA7CCD280A70ED00FEAFD5 /* ContentView.swift in Sources */,
 				02DA7CCB280A70ED00FEAFD5 /* PssssdLabApp.swift in Sources */,
+				02540464280AE34000E4CC47 /* TouchesHandler.swift in Sources */,
+				02540471280B068A00E4CC47 /* TitleBoard.swift in Sources */,
+				0254046F280B066B00E4CC47 /* Bulb.swift in Sources */,
+				0254049D280B337100E4CC47 /* AboutView.swift in Sources */,
+				0254046D280B066100E4CC47 /* Nail.swift in Sources */,
+				02633BC1280A86C20057DB66 /* ColorsAndFonts.swift in Sources */,
+				0254047D280B1D2B00E4CC47 /* NavBarIcon.swift in Sources */,
+				02633BC8280AC05F0057DB66 /* WaitingRoomView.swift in Sources */,
+				02540479280B14B500E4CC47 /* WaitingRoomVM.swift in Sources */,
+				0254046A280B061000E4CC47 /* TestSubject.swift in Sources */,
+				02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */,
+				023325FB280DD58A000FC931 /* CustomShape.swift in Sources */,
+				0254047B280B14C000E4CC47 /* ClinicalTrialVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +431,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"PssssdLab/Preview Content\"";
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PssssdLab/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pssssd;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -281,10 +450,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.PssssdLab;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pssssd;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -294,14 +463,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"PssssdLab/Preview Content\"";
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PssssdLab/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pssssd;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,10 +482,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.PssssdLab;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pssssd;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +511,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		02633BB7280A79390057DB66 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02633BB5280A78970057DB66 /* VideoPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */;
+			productName = VideoPlayer;
+		};
+		02633BB8280A79390057DB66 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02633BB7280A79390057DB66 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02DA7CBF280A70ED00FEAFD5 /* Project object */;
 }

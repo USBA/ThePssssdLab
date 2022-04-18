@@ -11,7 +11,8 @@ import SwiftUI
 struct PssssdLabApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WaitingRoomView()
+                .preferredColorScheme(.dark)
         }
     }
 }
