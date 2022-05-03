@@ -18,5 +18,6 @@ class WaitingRoomVM: ObservableObject {
         TestSubject(videoName: "TestSubject7"),
         TestSubject(videoName: "TestSubject8"),
         TestSubject(videoName: "TestSubject9"),
+        TestSubject(videoName: "TestSubject10"),
     ]
 }

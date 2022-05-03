@@ -13,32 +13,22 @@ struct TestSubjectCard: View {
     var testSubject: TestSubject
     
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Image(uiImage: getThumbnail() ?? UIImage())
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: UIScreen.main.bounds.size.width - 100, height: UIScreen.main.bounds.size.width - 100, alignment: .center)
+                .frame(width: UIScreen.main.bounds.size.width - 130, height: UIScreen.main.bounds.size.width - 130, alignment: .center)
             
-//            HStack {
-//                VStack(alignment:. leading) {
-//                    Text("Firstname Lastname")
-//                        .font(.subheadline)
-//                    Text("24y")
-//                        .font(.caption2)
-//                }
-//                Spacer()
-//                Image("PSSSSD-Logo")
-//                    .resizable()
-//                    .renderingMode(.template)
-//                    .frame(width: 40, height: 40)
-//            }
-//            .padding(.vertical)
+                NavigationLink(destination: ClinicalTrialView(testSubject: testSubject)) {
+                    CapsuleButton(text: "Select", mainColor: Color.custom(.PsssdPink))
+                }
         }
             .padding()
-            .padding(.bottom, 30)
+            .padding(.bottom, 10)
             .background(Color.custom(.PssssdCardColor))
             .clipShape(RoundedRectangle(cornerRadius: 7.5))
             .shadow(color: Color.black.opacity(0.2), radius: 0, x: 2, y: 2)
+        
     }
     
     func getThumbnail() -> UIImage? {

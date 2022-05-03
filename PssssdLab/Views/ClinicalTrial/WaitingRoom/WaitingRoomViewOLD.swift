@@ -11,7 +11,6 @@ import VideoPlayer
 
 struct WaitingRoomViewOLD: View {
     @StateObject var roomVM = WaitingRoomVM()
-    @State var showAbout = false
     
     let columns = [
         GridItem(.flexible(), spacing: 15),
@@ -19,58 +18,52 @@ struct WaitingRoomViewOLD: View {
     ]
     
     var body: some View {
-        NavigationView {
-            ZStack {
+        ZStack {
+            
+            // MARK: Background color
+            Color.custom(.PssssdBackgroundColor)
+                .ignoresSafeArea(.all)
+            
+            // MARK: Body
+            VStack(spacing: 0) {
                 
-                // MARK: Background color
-                Color.custom(.PssssdBackgroundColor)
-                    .ignoresSafeArea(.all)
+                navBar
                 
-                // MARK: Body
-                VStack(spacing: 0) {
+                // Test Subjects List
+                ScrollView {
+                    Text("Select a test subject")
+                        .font(Font.system(size: 20, design: .monospaced))
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.custom(.PssssdTextColor))
+                        .padding(.top, 10)
                     
-                    navBar
-                    
-                    // Test Subjects List
-                    ScrollView {
-                        Text("Select a test subject")
-                            .font(Font.system(size: 20, design: .monospaced))
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.custom(.PssssdTextColor))
-                            .padding(.top, 10)
-                        
-                        LazyVGrid(columns: columns, spacing: 15) {
-                            ForEach(roomVM.testSubjects) { testSubject in
-                                TestSubjectThumbnail(testSubject: testSubject)
-                            }
+                    LazyVGrid(columns: columns, spacing: 15) {
+                        ForEach(roomVM.testSubjects) { testSubject in
+                            TestSubjectThumbnail(testSubject: testSubject)
                         }
-                        .padding()
                     }
+                    .padding()
                 }
-                
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
-            .tint(Color.custom(.PssssdTextColor))
+            
         }
-        .sheet(isPresented: $showAbout) {
-            AboutView()
-        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
     
     var navBar: some View {
         ZStack {
-            HStack {
-                Spacer()
-                Button {
-                    let impactMed = UIImpactFeedbackGenerator(style: .light)
-                    impactMed.impactOccurred()
-                    showAbout = true
-                } label: {
-                    NavBarIcon(systemName: "info.circle")
-                }
-            }
+//            HStack {
+//                Spacer()
+//                Button {
+//                    let impactMed = UIImpactFeedbackGenerator(style: .light)
+//                    impactMed.impactOccurred()
+//                    showAbout = true
+//                } label: {
+//                    NavBarIcon(systemName: "info.circle")
+//                }
+//            }
             
             // Title
             TitleBoard(title: "Waiting Room")

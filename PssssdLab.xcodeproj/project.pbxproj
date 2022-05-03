@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0218908D282020AB0072C725 /* WaitingRoomView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0218908C282020AB0072C725 /* WaitingRoomView2.swift */; };
-		0221768A28210464004D6F97 /* SwiftUISnappingScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 0221768928210464004D6F97 /* SwiftUISnappingScrollView */; };
-		0221768D282105DA004D6F97 /* SnapToScroll in Frameworks */ = {isa = PBXBuildFile; productRef = 0221768C282105DA004D6F97 /* SnapToScroll */; };
+		0218908D282020AB0072C725 /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0218908C282020AB0072C725 /* WaitingRoomView.swift */; };
 		023325FD280DEE90000FC931 /* PanelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023325FC280DEE90000FC931 /* PanelButton.swift */; };
-		02540464280AE34000E4CC47 /* TouchesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540463280AE34000E4CC47 /* TouchesHandler.swift */; };
 		0254046A280B061000E4CC47 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540469280B061000E4CC47 /* TestSubject.swift */; };
 		0254046D280B066100E4CC47 /* Nail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254046C280B066100E4CC47 /* Nail.swift */; };
 		0254046F280B066B00E4CC47 /* Bulb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254046E280B066B00E4CC47 /* Bulb.swift */; };
@@ -35,6 +32,20 @@
 		02633BC3280A88C30057DB66 /* BureauGrotRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02633BC2280A88C30057DB66 /* BureauGrotRegular.otf */; };
 		02633BC8280AC05F0057DB66 /* WaitingRoomViewOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */; };
 		02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */; };
+		02A5EBE228214856009C8144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBE128214856009C8144 /* HomeView.swift */; };
+		02A5EBE428214E03009C8144 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBE328214E03009C8144 /* HomeButton.swift */; };
+		02A5EBE828215B4E009C8144 /* TestSubject10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02A5EBE728215B4D009C8144 /* TestSubject10.mp4 */; };
+		02A5EBEB2821729B009C8144 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBEA2821729B009C8144 /* MemoryGame.swift */; };
+		02A5EBED28217426009C8144 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBEC28217426009C8144 /* Array+Only.swift */; };
+		02A5EBF52821757C009C8144 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBF42821757C009C8144 /* EmojiMemoryGame.swift */; };
+		02A5EBF7282176DA009C8144 /* GameTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBF6282176DA009C8144 /* GameTheme.swift */; };
+		02A5EBF928217740009C8144 /* BrainTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBF828217740009C8144 /* BrainTestView.swift */; };
+		02A5EBFB282178CE009C8144 /* VisionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBFA282178CE009C8144 /* VisionTest.swift */; };
+		02A5EBFE28218C08009C8144 /* BrainTestCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBFD28218C08009C8144 /* BrainTestCardStyle.swift */; };
+		02A5EC0228219EFB009C8144 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EC0128219EFB009C8144 /* Grid.swift */; };
+		02A5EC0428219F13009C8144 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EC0328219F13009C8144 /* GridLayout.swift */; };
+		02A5EC072821A736009C8144 /* BrainTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EC062821A736009C8144 /* BrainTestCard.swift */; };
+		02A5EC092821B6FC009C8144 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EC082821B6FC009C8144 /* CapsuleButton.swift */; };
 		02DA7CCB280A70ED00FEAFD5 /* PssssdLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */; };
 		02DA7CCF280A70EF00FEAFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */; };
 		02DA7CD2280A70EF00FEAFD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DA7CD1280A70EF00FEAFD5 /* Preview Assets.xcassets */; };
@@ -42,9 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0218908C282020AB0072C725 /* WaitingRoomView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView2.swift; sourceTree = "<group>"; };
+		0218908C282020AB0072C725 /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
 		023325FC280DEE90000FC931 /* PanelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelButton.swift; sourceTree = "<group>"; };
-		02540463280AE34000E4CC47 /* TouchesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchesHandler.swift; sourceTree = "<group>"; };
 		02540469280B061000E4CC47 /* TestSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubject.swift; sourceTree = "<group>"; };
 		0254046C280B066100E4CC47 /* Nail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nail.swift; sourceTree = "<group>"; };
 		0254046E280B066B00E4CC47 /* Bulb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulb.swift; sourceTree = "<group>"; };
@@ -67,6 +77,20 @@
 		02633BC4280A88FB0057DB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewOLD.swift; sourceTree = "<group>"; };
 		02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialView.swift; sourceTree = "<group>"; };
+		02A5EBE128214856009C8144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		02A5EBE328214E03009C8144 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		02A5EBE728215B4D009C8144 /* TestSubject10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject10.mp4; sourceTree = "<group>"; };
+		02A5EBEA2821729B009C8144 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		02A5EBEC28217426009C8144 /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
+		02A5EBF42821757C009C8144 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
+		02A5EBF6282176DA009C8144 /* GameTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTheme.swift; sourceTree = "<group>"; };
+		02A5EBF828217740009C8144 /* BrainTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTestView.swift; sourceTree = "<group>"; };
+		02A5EBFA282178CE009C8144 /* VisionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTest.swift; sourceTree = "<group>"; };
+		02A5EBFD28218C08009C8144 /* BrainTestCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTestCardStyle.swift; sourceTree = "<group>"; };
+		02A5EC0128219EFB009C8144 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		02A5EC0328219F13009C8144 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		02A5EC062821A736009C8144 /* BrainTestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTestCard.swift; sourceTree = "<group>"; };
+		02A5EC082821B6FC009C8144 /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 		02DA7CC7280A70ED00FEAFD5 /* pssssd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pssssd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PssssdLabApp.swift; sourceTree = "<group>"; };
 		02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,10 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0221768D282105DA004D6F97 /* SnapToScroll in Frameworks */,
 				02633BB9280A79390057DB66 /* ConfettiSwiftUI in Frameworks */,
 				02633BB6280A78970057DB66 /* VideoPlayer in Frameworks */,
-				0221768A28210464004D6F97 /* SwiftUISnappingScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */,
-				0218908C282020AB0072C725 /* WaitingRoomView2.swift */,
+				0218908C282020AB0072C725 /* WaitingRoomView.swift */,
 				02F77A9A28211EEF00ACAE16 /* TestSubjectCard.swift */,
 			);
 			path = WaitingRoom;
@@ -119,11 +141,12 @@
 		02540465280B058B00E4CC47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0254046B280B064A00E4CC47 /* Shared */,
+				02A5EBE128214856009C8144 /* HomeView.swift */,
 				0221768E28211DE7004D6F97 /* ClinicalTrial */,
 				02F77A9C28211F0800ACAE16 /* BrainTest */,
 				02F77A9D28211F1800ACAE16 /* VisionTest */,
 				0254049C280B337100E4CC47 /* AboutView.swift */,
+				0254046B280B064A00E4CC47 /* Shared */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +156,7 @@
 			children = (
 				02540478280B14B500E4CC47 /* WaitingRoomVM.swift */,
 				0254047A280B14C000E4CC47 /* ClinicalTrialVM.swift */,
+				02A5EBF42821757C009C8144 /* EmojiMemoryGame.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -141,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				02540469280B061000E4CC47 /* TestSubject.swift */,
+				02A5EBF6282176DA009C8144 /* GameTheme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +186,8 @@
 				02540470280B068A00E4CC47 /* TitleBoard.swift */,
 				0254047C280B1D2B00E4CC47 /* NavBarIcon.swift */,
 				023325FC280DEE90000FC931 /* PanelButton.swift */,
+				02A5EC082821B6FC009C8144 /* CapsuleButton.swift */,
+				02A5EBE328214E03009C8144 /* HomeButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -168,8 +195,10 @@
 		02633BBA280A7B690057DB66 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				02A5EC0128219EFB009C8144 /* Grid.swift */,
+				02A5EC0328219F13009C8144 /* GridLayout.swift */,
 				02633BC0280A86C20057DB66 /* ColorsAndFonts.swift */,
-				02540463280AE34000E4CC47 /* TouchesHandler.swift */,
+				02A5EBEC28217426009C8144 /* Array+Only.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -186,8 +215,25 @@
 				0254048D280B307C00E4CC47 /* TestSubject7.mp4 */,
 				0254048E280B307D00E4CC47 /* TestSubject8.mp4 */,
 				0254048F280B307D00E4CC47 /* TestSubject9.mp4 */,
+				02A5EBE728215B4D009C8144 /* TestSubject10.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		02A5EBE928216F70009C8144 /* GameEngines */ = {
+			isa = PBXGroup;
+			children = (
+				02A5EBEA2821729B009C8144 /* MemoryGame.swift */,
+			);
+			path = GameEngines;
+			sourceTree = "<group>";
+		};
+		02A5EBFC28218BEA009C8144 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				02A5EBFD28218C08009C8144 /* BrainTestCardStyle.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		02DA7CBE280A70ED00FEAFD5 = {
@@ -211,10 +257,12 @@
 			children = (
 				02633BC4280A88FB0057DB66 /* Info.plist */,
 				02540468280B05F900E4CC47 /* App */,
+				02A5EBE928216F70009C8144 /* GameEngines */,
 				02540467280B05A800E4CC47 /* Models */,
 				02540466280B059200E4CC47 /* ViewModels */,
 				02540465280B058B00E4CC47 /* Views */,
 				02633BBF280A80600057DB66 /* Videos */,
+				02A5EBFC28218BEA009C8144 /* ViewModifiers */,
 				024A8098280A778100DDC58D /* Fonts */,
 				02633BBA280A7B690057DB66 /* Support */,
 				02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */,
@@ -234,6 +282,8 @@
 		02F77A9C28211F0800ACAE16 /* BrainTest */ = {
 			isa = PBXGroup;
 			children = (
+				02A5EBF828217740009C8144 /* BrainTestView.swift */,
+				02A5EC062821A736009C8144 /* BrainTestCard.swift */,
 			);
 			path = BrainTest;
 			sourceTree = "<group>";
@@ -241,6 +291,7 @@
 		02F77A9D28211F1800ACAE16 /* VisionTest */ = {
 			isa = PBXGroup;
 			children = (
+				02A5EBFA282178CE009C8144 /* VisionTest.swift */,
 			);
 			path = VisionTest;
 			sourceTree = "<group>";
@@ -264,8 +315,6 @@
 			packageProductDependencies = (
 				02633BB5280A78970057DB66 /* VideoPlayer */,
 				02633BB8280A79390057DB66 /* ConfettiSwiftUI */,
-				0221768928210464004D6F97 /* SwiftUISnappingScrollView */,
-				0221768C282105DA004D6F97 /* SnapToScroll */,
 			);
 			productName = PssssdLab;
 			productReference = 02DA7CC7280A70ED00FEAFD5 /* pssssd.app */;
@@ -298,8 +347,6 @@
 			packageReferences = (
 				02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
 				02633BB7280A79390057DB66 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
-				0221768828210464004D6F97 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */,
-				0221768B282105DA004D6F97 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */,
 			);
 			productRefGroup = 02DA7CC8280A70ED00FEAFD5 /* Products */;
 			projectDirPath = "";
@@ -321,6 +368,7 @@
 				02540496280B307E00E4CC47 /* TestSubject7.mp4 in Resources */,
 				02540497280B307E00E4CC47 /* TestSubject8.mp4 in Resources */,
 				02540498280B307E00E4CC47 /* TestSubject9.mp4 in Resources */,
+				02A5EBE828215B4E009C8144 /* TestSubject10.mp4 in Resources */,
 				02540499280B307E00E4CC47 /* TestSubject5.mp4 in Resources */,
 				0254049A280B307E00E4CC47 /* TestSubject1.mp4 in Resources */,
 				0254049B280B307E00E4CC47 /* TestSubject6.mp4 in Resources */,
@@ -338,20 +386,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				02DA7CCB280A70ED00FEAFD5 /* PssssdLabApp.swift in Sources */,
-				02540464280AE34000E4CC47 /* TouchesHandler.swift in Sources */,
+				02A5EC0228219EFB009C8144 /* Grid.swift in Sources */,
+				02A5EBED28217426009C8144 /* Array+Only.swift in Sources */,
+				02A5EBF52821757C009C8144 /* EmojiMemoryGame.swift in Sources */,
+				02A5EBFB282178CE009C8144 /* VisionTest.swift in Sources */,
 				02540471280B068A00E4CC47 /* TitleBoard.swift in Sources */,
+				02A5EBF928217740009C8144 /* BrainTestView.swift in Sources */,
+				02A5EC092821B6FC009C8144 /* CapsuleButton.swift in Sources */,
 				0254046F280B066B00E4CC47 /* Bulb.swift in Sources */,
+				02A5EBF7282176DA009C8144 /* GameTheme.swift in Sources */,
 				0254049D280B337100E4CC47 /* AboutView.swift in Sources */,
+				02A5EBE228214856009C8144 /* HomeView.swift in Sources */,
 				0254046D280B066100E4CC47 /* Nail.swift in Sources */,
+				02A5EBEB2821729B009C8144 /* MemoryGame.swift in Sources */,
 				02633BC1280A86C20057DB66 /* ColorsAndFonts.swift in Sources */,
 				0254047D280B1D2B00E4CC47 /* NavBarIcon.swift in Sources */,
+				02A5EC072821A736009C8144 /* BrainTestCard.swift in Sources */,
 				02633BC8280AC05F0057DB66 /* WaitingRoomViewOLD.swift in Sources */,
+				02A5EBE428214E03009C8144 /* HomeButton.swift in Sources */,
 				02540479280B14B500E4CC47 /* WaitingRoomVM.swift in Sources */,
 				02F77A9B28211EEF00ACAE16 /* TestSubjectCard.swift in Sources */,
+				02A5EBFE28218C08009C8144 /* BrainTestCardStyle.swift in Sources */,
 				0254046A280B061000E4CC47 /* TestSubject.swift in Sources */,
 				02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */,
 				0254047B280B14C000E4CC47 /* ClinicalTrialVM.swift in Sources */,
-				0218908D282020AB0072C725 /* WaitingRoomView2.swift in Sources */,
+				02A5EC0428219F13009C8144 /* GridLayout.swift in Sources */,
+				0218908D282020AB0072C725 /* WaitingRoomView.swift in Sources */,
 				023325FD280DEE90000FC931 /* PanelButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,22 +621,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0221768828210464004D6F97 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ciaranrobrien/SwiftUISnappingScrollView.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		0221768B282105DA004D6F97 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/swiftui-library/hstack-snap-to-scroll.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
@@ -596,16 +640,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0221768928210464004D6F97 /* SwiftUISnappingScrollView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0221768828210464004D6F97 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */;
-			productName = SwiftUISnappingScrollView;
-		};
-		0221768C282105DA004D6F97 /* SnapToScroll */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0221768B282105DA004D6F97 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */;
-			productName = SnapToScroll;
-		};
 		02633BB5280A78970057DB66 /* VideoPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */;

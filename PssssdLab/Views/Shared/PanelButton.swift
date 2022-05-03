@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PanelButton: View {
-    var isActive: Bool
+    var isActive: Bool = true
     var text: String
     var mainColor: Color
     var borderColor: Color
