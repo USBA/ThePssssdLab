@@ -20,7 +20,7 @@ class ClinicalTrialVM: ObservableObject {
         if isLoading {
             print("Still Loading ...")
         } else if !play {
-            self.generator.notificationOccurred(.warning)
+            self.generator.notificationOccurred(.error)
         } else {
             self.isLoading = true
             self.generator.notificationOccurred(.success)

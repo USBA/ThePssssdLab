@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023325FB280DD58A000FC931 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023325FA280DD58A000FC931 /* CustomShape.swift */; };
+		023325FD280DEE90000FC931 /* PanelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023325FC280DEE90000FC931 /* PanelButton.swift */; };
 		02540464280AE34000E4CC47 /* TouchesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540463280AE34000E4CC47 /* TouchesHandler.swift */; };
 		0254046A280B061000E4CC47 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540469280B061000E4CC47 /* TestSubject.swift */; };
 		0254046D280B066100E4CC47 /* Nail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254046C280B066100E4CC47 /* Nail.swift */; };
@@ -38,7 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		023325FA280DD58A000FC931 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		023325FC280DEE90000FC931 /* PanelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelButton.swift; sourceTree = "<group>"; };
 		02540463280AE34000E4CC47 /* TouchesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchesHandler.swift; sourceTree = "<group>"; };
 		02540469280B061000E4CC47 /* TestSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubject.swift; sourceTree = "<group>"; };
 		0254046C280B066100E4CC47 /* Nail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nail.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 				0254046E280B066B00E4CC47 /* Bulb.swift */,
 				02540470280B068A00E4CC47 /* TitleBoard.swift */,
 				0254047C280B1D2B00E4CC47 /* NavBarIcon.swift */,
-				023325FA280DD58A000FC931 /* CustomShape.swift */,
+				023325FC280DEE90000FC931 /* PanelButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -303,8 +303,8 @@
 				02540479280B14B500E4CC47 /* WaitingRoomVM.swift in Sources */,
 				0254046A280B061000E4CC47 /* TestSubject.swift in Sources */,
 				02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */,
-				023325FB280DD58A000FC931 /* CustomShape.swift in Sources */,
 				0254047B280B14C000E4CC47 /* ClinicalTrialVM.swift in Sources */,
+				023325FD280DEE90000FC931 /* PanelButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"PssssdLab/Preview Content\"";
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
@@ -463,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"PssssdLab/Preview Content\"";
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
