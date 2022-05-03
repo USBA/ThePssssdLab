@@ -11,10 +11,12 @@ enum ProjectColors: String {
     case PssssdBackgroundColor = "PssssdBackgroundColor"
     case PssssdTextColor = "PssssdTextColor"
     case PssssdInstrumentColor = "PssssdInstrumentColor"
+    case PssssdCardColor = "PssssdCardColor"
     case PssssdBlue = "PssssdBlue"
     case PsssdPink = "PsssdPink"
     case PsssdGreen = "PsssdGreen"
     case PsssdOrange = "PsssdOrange"
+    case PssssdRed = "PssssdRed"
     
 }
 

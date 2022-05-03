@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TestSubject: Identifiable {
+struct TestSubject: Identifiable, Equatable, Hashable {
     var id = UUID()
     var videoName: String
 }

@@ -70,6 +70,7 @@ struct ClinicalTrialView: View {
     var navBar: some View {
         ZStack {
             HStack {
+                // back button
                 Button {
                     let impactMed = UIImpactFeedbackGenerator(style: .light)
                     impactMed.impactOccurred()

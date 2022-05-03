@@ -1,5 +1,5 @@
 //
-//  WaitingRoomView.swift
+//  WaitingRoomViewOLD.swift
 //  PssssdLab
 //
 //  Created by Umayanga Alahakoon on 2022-04-16.
@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 import VideoPlayer
 
-struct WaitingRoomView: View {
+struct WaitingRoomViewOLD: View {
     @StateObject var roomVM = WaitingRoomVM()
     @State var showAbout = false
     
@@ -79,9 +79,9 @@ struct WaitingRoomView: View {
     }
 }
 
-struct WaitingRoomView_Previews: PreviewProvider {
+struct WaitingRoomViewOLD_Previews: PreviewProvider {
     static var previews: some View {
-        WaitingRoomView()
+        WaitingRoomViewOLD()
     }
 }
 
@@ -117,24 +117,6 @@ struct TestSubjectThumbnail: View {
         } catch {
           print(error.localizedDescription)
           return nil
-        }
-    }
-}
-
-extension AVAsset {
-
-    func generateThumbnail(completion: @escaping (UIImage?) -> Void) {
-        DispatchQueue.global().async {
-            let imageGenerator = AVAssetImageGenerator(asset: self)
-            let time = CMTime(seconds: 0.0, preferredTimescale: 600)
-            let times = [NSValue(time: time)]
-            imageGenerator.generateCGImagesAsynchronously(forTimes: times, completionHandler: { _, image, _, _, _ in
-                if let image = image {
-                    completion(UIImage(cgImage: image))
-                } else {
-                    completion(nil)
-                }
-            })
         }
     }
 }

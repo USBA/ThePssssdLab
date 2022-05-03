@@ -8,7 +8,7 @@
 import SwiftUI
 
 class WaitingRoomVM: ObservableObject {
-    @Published private(set) var testSubjects: [TestSubject] = [
+    @Published var testSubjects: [TestSubject] = [
         TestSubject(videoName: "TestSubject1"),
         TestSubject(videoName: "TestSubject2"),
         TestSubject(videoName: "TestSubject3"),

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0218908D282020AB0072C725 /* WaitingRoomView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0218908C282020AB0072C725 /* WaitingRoomView2.swift */; };
+		0221768A28210464004D6F97 /* SwiftUISnappingScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 0221768928210464004D6F97 /* SwiftUISnappingScrollView */; };
+		0221768D282105DA004D6F97 /* SnapToScroll in Frameworks */ = {isa = PBXBuildFile; productRef = 0221768C282105DA004D6F97 /* SnapToScroll */; };
 		023325FD280DEE90000FC931 /* PanelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023325FC280DEE90000FC931 /* PanelButton.swift */; };
 		02540464280AE34000E4CC47 /* TouchesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540463280AE34000E4CC47 /* TouchesHandler.swift */; };
 		0254046A280B061000E4CC47 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540469280B061000E4CC47 /* TestSubject.swift */; };
@@ -30,14 +33,16 @@
 		02633BB9280A79390057DB66 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 02633BB8280A79390057DB66 /* ConfettiSwiftUI */; };
 		02633BC1280A86C20057DB66 /* ColorsAndFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC0280A86C20057DB66 /* ColorsAndFonts.swift */; };
 		02633BC3280A88C30057DB66 /* BureauGrotRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02633BC2280A88C30057DB66 /* BureauGrotRegular.otf */; };
-		02633BC8280AC05F0057DB66 /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC7280AC05E0057DB66 /* WaitingRoomView.swift */; };
+		02633BC8280AC05F0057DB66 /* WaitingRoomViewOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */; };
 		02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */; };
 		02DA7CCB280A70ED00FEAFD5 /* PssssdLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */; };
 		02DA7CCF280A70EF00FEAFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */; };
 		02DA7CD2280A70EF00FEAFD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DA7CD1280A70EF00FEAFD5 /* Preview Assets.xcassets */; };
+		02F77A9B28211EEF00ACAE16 /* TestSubjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F77A9A28211EEF00ACAE16 /* TestSubjectCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0218908C282020AB0072C725 /* WaitingRoomView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView2.swift; sourceTree = "<group>"; };
 		023325FC280DEE90000FC931 /* PanelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelButton.swift; sourceTree = "<group>"; };
 		02540463280AE34000E4CC47 /* TouchesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchesHandler.swift; sourceTree = "<group>"; };
 		02540469280B061000E4CC47 /* TestSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubject.swift; sourceTree = "<group>"; };
@@ -60,12 +65,13 @@
 		02633BC0280A86C20057DB66 /* ColorsAndFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsAndFonts.swift; sourceTree = "<group>"; };
 		02633BC2280A88C30057DB66 /* BureauGrotRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BureauGrotRegular.otf; sourceTree = "<group>"; };
 		02633BC4280A88FB0057DB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		02633BC7280AC05E0057DB66 /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
+		02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewOLD.swift; sourceTree = "<group>"; };
 		02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialView.swift; sourceTree = "<group>"; };
 		02DA7CC7280A70ED00FEAFD5 /* pssssd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pssssd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PssssdLabApp.swift; sourceTree = "<group>"; };
 		02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02DA7CD1280A70EF00FEAFD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02F77A9A28211EEF00ACAE16 /* TestSubjectCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSubjectCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +79,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0221768D282105DA004D6F97 /* SnapToScroll in Frameworks */,
 				02633BB9280A79390057DB66 /* ConfettiSwiftUI in Frameworks */,
 				02633BB6280A78970057DB66 /* VideoPlayer in Frameworks */,
+				0221768A28210464004D6F97 /* SwiftUISnappingScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0221768E28211DE7004D6F97 /* ClinicalTrial */ = {
+			isa = PBXGroup;
+			children = (
+				0221768F28211E2F004D6F97 /* WaitingRoom */,
+				02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */,
+			);
+			path = ClinicalTrial;
+			sourceTree = "<group>";
+		};
+		0221768F28211E2F004D6F97 /* WaitingRoom */ = {
+			isa = PBXGroup;
+			children = (
+				02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */,
+				0218908C282020AB0072C725 /* WaitingRoomView2.swift */,
+				02F77A9A28211EEF00ACAE16 /* TestSubjectCard.swift */,
+			);
+			path = WaitingRoom;
+			sourceTree = "<group>";
+		};
 		024A8098280A778100DDC58D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				0254046B280B064A00E4CC47 /* Shared */,
-				02633BC7280AC05E0057DB66 /* WaitingRoomView.swift */,
-				02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */,
+				0221768E28211DE7004D6F97 /* ClinicalTrial */,
+				02F77A9C28211F0800ACAE16 /* BrainTest */,
+				02F77A9D28211F1800ACAE16 /* VisionTest */,
 				0254049C280B337100E4CC47 /* AboutView.swift */,
 			);
 			path = Views;
@@ -203,6 +231,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		02F77A9C28211F0800ACAE16 /* BrainTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BrainTest;
+			sourceTree = "<group>";
+		};
+		02F77A9D28211F1800ACAE16 /* VisionTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VisionTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +264,8 @@
 			packageProductDependencies = (
 				02633BB5280A78970057DB66 /* VideoPlayer */,
 				02633BB8280A79390057DB66 /* ConfettiSwiftUI */,
+				0221768928210464004D6F97 /* SwiftUISnappingScrollView */,
+				0221768C282105DA004D6F97 /* SnapToScroll */,
 			);
 			productName = PssssdLab;
 			productReference = 02DA7CC7280A70ED00FEAFD5 /* pssssd.app */;
@@ -254,6 +298,8 @@
 			packageReferences = (
 				02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
 				02633BB7280A79390057DB66 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				0221768828210464004D6F97 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */,
+				0221768B282105DA004D6F97 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */,
 			);
 			productRefGroup = 02DA7CC8280A70ED00FEAFD5 /* Products */;
 			projectDirPath = "";
@@ -299,11 +345,13 @@
 				0254046D280B066100E4CC47 /* Nail.swift in Sources */,
 				02633BC1280A86C20057DB66 /* ColorsAndFonts.swift in Sources */,
 				0254047D280B1D2B00E4CC47 /* NavBarIcon.swift in Sources */,
-				02633BC8280AC05F0057DB66 /* WaitingRoomView.swift in Sources */,
+				02633BC8280AC05F0057DB66 /* WaitingRoomViewOLD.swift in Sources */,
 				02540479280B14B500E4CC47 /* WaitingRoomVM.swift in Sources */,
+				02F77A9B28211EEF00ACAE16 /* TestSubjectCard.swift in Sources */,
 				0254046A280B061000E4CC47 /* TestSubject.swift in Sources */,
 				02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */,
 				0254047B280B14C000E4CC47 /* ClinicalTrialVM.swift in Sources */,
+				0218908D282020AB0072C725 /* WaitingRoomView2.swift in Sources */,
 				023325FD280DEE90000FC931 /* PanelButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +561,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0221768828210464004D6F97 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ciaranrobrien/SwiftUISnappingScrollView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		0221768B282105DA004D6F97 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftui-library/hstack-snap-to-scroll.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
@@ -532,6 +596,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0221768928210464004D6F97 /* SwiftUISnappingScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0221768828210464004D6F97 /* XCRemoteSwiftPackageReference "SwiftUISnappingScrollView" */;
+			productName = SwiftUISnappingScrollView;
+		};
+		0221768C282105DA004D6F97 /* SnapToScroll */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0221768B282105DA004D6F97 /* XCRemoteSwiftPackageReference "hstack-snap-to-scroll" */;
+			productName = SnapToScroll;
+		};
 		02633BB5280A78970057DB66 /* VideoPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */;
