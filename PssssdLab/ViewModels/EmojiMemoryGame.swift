@@ -18,6 +18,7 @@ class EmojiMemoryGame: ObservableObject {
     
     @Published var confettiCounter = 0
     @Published var showTestSubjectUnlockPopup = false
+    @Published var showInstructions = false
     
     @AppStorage("brainTestHighScore") var brainTestHighScore = 0
     @AppStorage("testSubjectAlienFrenUnlocked") var testSubjectAlienFrenUnlocked = false
@@ -31,6 +32,10 @@ class EmojiMemoryGame: ObservableObject {
     }
     
     // MARK: - Access to the model
+    
+    var instructions: [String] {
+        model.instructions
+    }
     
     var cards: Array<MemoryGame<String>.Card> {
         model.cards

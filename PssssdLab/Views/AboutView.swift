@@ -13,6 +13,7 @@ struct AboutView: View {
     let pssssdWebsite = URL(string: "https://pssssd.xyz/")!
     let pssssdInstagram = URL(string: "https://www.instagram.com/ThePossessedNFT/")!
     let twitterURL = URL(string: "https://twitter.com/metaUSB")!
+    let sourcecodeURL = URL(string: "https://github.com/USBA/ThePssssdLab")!
     
     var body: some View {
         ZStack {
@@ -59,10 +60,27 @@ struct AboutView: View {
                                 Text("Twitter:")
                                     .font(Font.system(size: 20, design: .monospaced))
                                     .fontWeight(.semibold)
+                                    .multilineTextAlignment(.leading)
                                 Text("@metaUSB")
                                     .font(Font.system(size: 20, design: .monospaced))
                                     .fontWeight(.semibold)
                                     .underline()
+                                    .multilineTextAlignment(.leading)
+                            }
+                        }
+                        
+                        // app's source code
+                        Link(destination: sourcecodeURL) {
+                            HStack {
+                                Text("Source code:")
+                                    .font(Font.system(size: 20, design: .monospaced))
+                                    .fontWeight(.semibold)
+                                    .multilineTextAlignment(.leading)
+                                Text("GitHub")
+                                    .font(Font.system(size: 20, design: .monospaced))
+                                    .fontWeight(.semibold)
+                                    .underline()
+                                    .multilineTextAlignment(.leading)
                             }
                         }
                         

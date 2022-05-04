@@ -32,13 +32,14 @@
 		02633BC3280A88C30057DB66 /* BureauGrotRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02633BC2280A88C30057DB66 /* BureauGrotRegular.otf */; };
 		02633BC8280AC05F0057DB66 /* WaitingRoomViewOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */; };
 		02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */; };
+		029407812822768F00FBB9CF /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029407802822768F00FBB9CF /* InstructionsView.swift */; };
+		029407832822781600FBB9CF /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029407822822781600FBB9CF /* Line.swift */; };
 		02A5EBE228214856009C8144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBE128214856009C8144 /* HomeView.swift */; };
 		02A5EBE428214E03009C8144 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBE328214E03009C8144 /* HomeButton.swift */; };
 		02A5EBE828215B4E009C8144 /* TestSubject10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02A5EBE728215B4D009C8144 /* TestSubject10.mp4 */; };
 		02A5EBEB2821729B009C8144 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBEA2821729B009C8144 /* MemoryGame.swift */; };
 		02A5EBED28217426009C8144 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBEC28217426009C8144 /* Array+Only.swift */; };
 		02A5EBF52821757C009C8144 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBF42821757C009C8144 /* EmojiMemoryGame.swift */; };
-		02A5EBF7282176DA009C8144 /* GameTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBF6282176DA009C8144 /* GameTheme.swift */; };
 		02A5EBF928217740009C8144 /* BrainTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBF828217740009C8144 /* BrainTestView.swift */; };
 		02A5EBFB282178CE009C8144 /* VisionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBFA282178CE009C8144 /* VisionTest.swift */; };
 		02A5EBFE28218C08009C8144 /* BrainTestCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBFD28218C08009C8144 /* BrainTestCardStyle.swift */; };
@@ -80,13 +81,14 @@
 		02633BC4280A88FB0057DB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewOLD.swift; sourceTree = "<group>"; };
 		02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialView.swift; sourceTree = "<group>"; };
+		029407802822768F00FBB9CF /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		029407822822781600FBB9CF /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		02A5EBE128214856009C8144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		02A5EBE328214E03009C8144 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
 		02A5EBE728215B4D009C8144 /* TestSubject10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject10.mp4; sourceTree = "<group>"; };
 		02A5EBEA2821729B009C8144 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		02A5EBEC28217426009C8144 /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 		02A5EBF42821757C009C8144 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
-		02A5EBF6282176DA009C8144 /* GameTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTheme.swift; sourceTree = "<group>"; };
 		02A5EBF828217740009C8144 /* BrainTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTestView.swift; sourceTree = "<group>"; };
 		02A5EBFA282178CE009C8144 /* VisionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTest.swift; sourceTree = "<group>"; };
 		02A5EBFD28218C08009C8144 /* BrainTestCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTestCardStyle.swift; sourceTree = "<group>"; };
@@ -171,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				02540469280B061000E4CC47 /* TestSubject.swift */,
-				02A5EBF6282176DA009C8144 /* GameTheme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +195,7 @@
 				023325FC280DEE90000FC931 /* PanelButton.swift */,
 				02A5EC082821B6FC009C8144 /* CapsuleButton.swift */,
 				02A5EBE328214E03009C8144 /* HomeButton.swift */,
+				029407802822768F00FBB9CF /* InstructionsView.swift */,
 				02CBBAE528223CE6007EAB29 /* PopupTestSubjectUnlocked.swift */,
 				02CBBAE728224B13007EAB29 /* BlurView.swift */,
 			);
@@ -203,6 +205,7 @@
 		02633BBA280A7B690057DB66 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				029407822822781600FBB9CF /* Line.swift */,
 				02A5EC0128219EFB009C8144 /* Grid.swift */,
 				02A5EC0328219F13009C8144 /* GridLayout.swift */,
 				02633BC0280A86C20057DB66 /* ColorsAndFonts.swift */,
@@ -404,10 +407,11 @@
 				02A5EBF928217740009C8144 /* BrainTestView.swift in Sources */,
 				02A5EC092821B6FC009C8144 /* CapsuleButton.swift in Sources */,
 				0254046F280B066B00E4CC47 /* Bulb.swift in Sources */,
-				02A5EBF7282176DA009C8144 /* GameTheme.swift in Sources */,
 				0254049D280B337100E4CC47 /* AboutView.swift in Sources */,
 				02A5EBE228214856009C8144 /* HomeView.swift in Sources */,
 				0254046D280B066100E4CC47 /* Nail.swift in Sources */,
+				029407832822781600FBB9CF /* Line.swift in Sources */,
+				029407812822768F00FBB9CF /* InstructionsView.swift in Sources */,
 				02CBBAE628223CE6007EAB29 /* PopupTestSubjectUnlocked.swift in Sources */,
 				02A5EBEB2821729B009C8144 /* MemoryGame.swift in Sources */,
 				02633BC1280A86C20057DB66 /* ColorsAndFonts.swift in Sources */,

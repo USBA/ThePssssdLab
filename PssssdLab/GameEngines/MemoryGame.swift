@@ -12,6 +12,12 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     private(set) var score: Int = 0
     private(set) var gameOver: Bool = false
     
+    let instructions: [String] = [
+        "Select the matching pairs of cards.",
+        "Two points for every match.",
+        "One point will get deducted per already seen cards for every mismatch."
+    ]
+    
     private var indexOfTheOneAndOnlyFacedUpCard: Int? {
         get {
             cards.indices.filter { cards[$0].isFacedUp }.only

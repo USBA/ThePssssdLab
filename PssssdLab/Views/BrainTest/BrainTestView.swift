@@ -47,11 +47,28 @@ struct BrainTestView: View {
                     Spacer()
                 }
                 
-                // Score
-                Text("\(game.score)")
-                    .font(Font.system(size: 35, design: .monospaced))
-                    .fontWeight(.semibold)
-                    .scaleEffect(game.isGameOver ? 3 : 1)
+                ZStack {
+                    if !game.isGameOver {
+                        HStack {
+                            // instructions button
+                            Button {
+                                let impactMed = UIImpactFeedbackGenerator(style: .light)
+                                impactMed.impactOccurred()
+                                game.showInstructions = true
+                            } label: {
+                                NavBarIcon(systemName: "questionmark.circle")
+                            }
+                            
+                            Spacer()
+                        }
+                    }
+                    
+                    // Score
+                    Text("\(game.score)")
+                        .font(Font.system(size: 35, design: .monospaced))
+                        .fontWeight(.semibold)
+                        .scaleEffect(game.isGameOver ? 3 : 1)
+                }
                 
                 if game.isGameOver {
                     Text("Score")
@@ -89,6 +106,12 @@ struct BrainTestView: View {
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
         }
+        // instructions sheet
+        .popup(isPresented: $game.showInstructions, type: .default, position: .bottom, animation: .spring(response: 0.4, dampingFraction: 0.7), dragToDismiss: true, closeOnTap: false, closeOnTapOutside: true, backgroundColor: Color.black.opacity(0.3)) {
+            InstructionsView(instructions: game.instructions)
+                .opacity(game.showInstructions ? 1 : 0)
+        }
+        // test-subject-unlocked notification
         .popup(isPresented: $game.showTestSubjectUnlockPopup, type: .floater(), position: .top, animation: .spring(response: 0.4, dampingFraction: 0.7), autohideIn: 5, dragToDismiss: true, closeOnTap: false, closeOnTapOutside: false) {
             PopupTestSubjectUnlocked(testSubject: TestSubject(videoName: "TestSubject10"))
                 .opacity(game.showTestSubjectUnlockPopup ? 1 : 0)
