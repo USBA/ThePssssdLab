@@ -1,5 +1,5 @@
 //
-//  EmojiMemoryGame.swift
+//  BrainTestVM.swift
 //  PssssdLab
 //
 //  Created by Umayanga Alahakoon on 2022-05-03.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class EmojiMemoryGame: ObservableObject {
+class BrainTestVM: ObservableObject {
     static let items = ["🧪", "🔬", "🥼", "🥽", "💉", "🧬"]
     static let numberOfPairs = 6
     
@@ -25,8 +25,8 @@ class EmojiMemoryGame: ObservableObject {
     
     // MARK: - Assignment 5
     init() {
-        let newGame =  MemoryGame<String>(numberOfPairsOfCards: EmojiMemoryGame.numberOfPairs) { pairIndex in
-            return EmojiMemoryGame.items[pairIndex]
+        let newGame =  MemoryGame<String>(numberOfPairsOfCards: BrainTestVM.numberOfPairs) { pairIndex in
+            return BrainTestVM.items[pairIndex]
         }
         model = newGame
     }
@@ -57,10 +57,11 @@ class EmojiMemoryGame: ObservableObject {
     }
     
     func resetGame() {
-        let newGame =  MemoryGame<String>(numberOfPairsOfCards: EmojiMemoryGame.numberOfPairs) { pairIndex in
-            return EmojiMemoryGame.items[pairIndex]
+        let newGame =  MemoryGame<String>(numberOfPairsOfCards: BrainTestVM.numberOfPairs) { pairIndex in
+            return BrainTestVM.items[pairIndex]
         }
         model = newGame
+        self.isNewHighScore = false
     }
     
     func endGame(isGameOver: Bool) {

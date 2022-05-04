@@ -62,7 +62,7 @@ struct HomeView: View {
                         HomeButton(text: "Brain Test", mainColor: Color.custom(.PsssdGreen), borderColor: Color.black.opacity(0.5), imageName: "Brain", imageWidth: 75, imageOffsetY: -20)
                     }
                     
-                    NavigationLink(destination: VisionTest()) {
+                    NavigationLink(destination: VisionTestView()) {
                         HomeButton(text: "Vision Test", mainColor: Color.custom(.PssssdInstrumentColor), borderColor: Color.black.opacity(0.5), imageName: "Eyes", imageWidth: 75, imageOffsetY: -20)
                     }
                     

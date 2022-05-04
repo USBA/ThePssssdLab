@@ -11,14 +11,16 @@ struct CapsuleButton: View {
     var isActive: Bool = true
     var text: String
     var mainColor: Color
+    var hPadding: CGFloat = 75
+    var vPadding: CGFloat = 10
     
     var body: some View {
         Text(text)
             .font(Font.system(size: 20, design: .default))
             .fontWeight(.semibold)
             .foregroundColor(Color.custom(.PssssdBackgroundColor))
-            .padding(.horizontal, 75)
-            .padding(.vertical, 10)
+            .padding(.horizontal, hPadding)
+            .padding(.vertical, vPadding)
             .background(
                 Capsule()
                     .fill(isActive ? mainColor : Color(#colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1)))

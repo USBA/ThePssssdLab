@@ -1,5 +1,5 @@
 //
-//  BrainTestView.swift
+//  VisionTestView.swift
 //  PssssdLab
 //
 //  Created by Umayanga Alahakoon on 2022-05-03.
@@ -9,15 +9,9 @@ import SwiftUI
 import ConfettiSwiftUI
 import PopupView
 
-struct BrainTestView: View {
+struct VisionTestView: View {
     @Environment(\.presentationMode) var presentationMode
-    @StateObject var game = BrainTestVM()
-    
-    let columns = [
-        GridItem(.flexible(), spacing: 15),
-        GridItem(.flexible(), spacing: 15),
-        GridItem(.flexible(), spacing: 15),
-    ]
+    @StateObject var game = VisionTestVM()
     
     var body: some View {
         ZStack {
@@ -32,57 +26,43 @@ struct BrainTestView: View {
                 navBar
                 
                 if !game.isGameOver {
-                    // Cards
-                    Grid(game.cards) { card in
-                        BrainTestCard(card: card, gameOver: game.isGameOver)
-                            .onTapGesture {
-                                withAnimation(.linear(duration: 0.75)) {
-                                    game.chose(card: card)
+                    VStack {
+                        Grid(game.dealedCards) { card in
+                            VisionTestCard(card: card, gameOver: game.isGameOver)
+                                .aspectRatio(1, contentMode: .fit)
+                                .onTapGesture {
+                                    withAnimation {
+                                        game.select(card: card)
+                                    }
                                 }
-                            }
-                            .padding(5)
-                    }
-                    .foregroundColor(Color.custom(.PssssdRed))
-                } else {
-                    Spacer()
-                }
-                
-                ZStack {
-                    if !game.isGameOver {
-                        HStack {
-                            // instructions button
-                            Button {
-                                let impactMed = UIImpactFeedbackGenerator(style: .light)
-                                impactMed.impactOccurred()
-                                game.showInstructions = true
-                            } label: {
-                                NavBarIcon(systemName: "questionmark.circle")
-                            }
-                            
-                            Spacer()
+                                .padding(5)
                         }
+                        .accentColor(statusColor)
                     }
-                    
-                    // Score
-                    Text("\(game.score)")
-                        .font(Font.system(size: 35, design: .monospaced))
-                        .fontWeight(.semibold)
-                        .scaleEffect(game.isGameOver ? 3 : 1)
-                }
                 
-                if game.isGameOver {
-                    Text("Score")
+                } else {
+                    
+                    Spacer()
+                    
+                    Text(game.timeElapsed)
+                        .font(Font.system(size: 70, design: .monospaced))
+                        .fontWeight(.semibold)
+                        .transition(.scale)
+                    
+                    Text("Time Elapsed")
                         .font(Font.system(size: 25, design: .monospaced))
                         .fontWeight(.semibold)
                         .transition(.scale)
-                        .padding(.top, 10)
+                        .padding(.top, -10)
                     
                     Spacer()
                     
                     ZStack{
                         // New Game button
                         Button {
-                            resetGame()
+                            withAnimation {
+                                game.newGame()
+                            }
                         } label: {
                             CapsuleButton(text: "New Game", mainColor: Color.custom(.PsssdGreen))
                                 .transition(.scale)
@@ -94,11 +74,17 @@ struct BrainTestView: View {
                     
                     Spacer()
                     
-                    Text(game.isNewHighScore ? "New High Score" : "High Score: 20")
+                    Text(game.isNewBestTiming ? "New Best Timing" : "Best Timing: \(convertSecondsToHrMinuteSec(seconds: game.visionBestTiming))")
                         .font(Font.system(size: 20, design: .monospaced))
                         .fontWeight(.semibold)
                         .transition(.scale)
                 }
+                
+                
+                if !game.isGameOver {
+                    bottomBar
+                }
+                
                 
             }
             .padding()
@@ -111,11 +97,6 @@ struct BrainTestView: View {
             InstructionsView(instructions: game.instructions)
                 .opacity(game.showInstructions ? 1 : 0)
         }
-        // test-subject-unlocked notification
-        .popup(isPresented: $game.showTestSubjectUnlockPopup, type: .floater(), position: .top, animation: .spring(response: 0.4, dampingFraction: 0.7), autohideIn: 5, dragToDismiss: true, closeOnTap: false, closeOnTapOutside: false) {
-            PopupTestSubjectUnlocked(testSubject: TestSubject(videoName: "TestSubject10"))
-                .opacity(game.showTestSubjectUnlockPopup ? 1 : 0)
-        }
         .onChange(of: game.gameOver) { gameOver in
             game.endGame(isGameOver: gameOver)
         }
@@ -126,6 +107,7 @@ struct BrainTestView: View {
             HStack {
                 // back button
                 Button {
+                    game.timer.invalidate()
                     let impactMed = UIImpactFeedbackGenerator(style: .light)
                     impactMed.impactOccurred()
                     presentationMode.wrappedValue.dismiss()
@@ -137,34 +119,65 @@ struct BrainTestView: View {
                 
                 // reset button
                 Button {
-                    resetGame()
+                    withAnimation {
+                        game.newGame()
+                    }
                     
-                    // for testing game end
-                    //game.endGame(isGameOver: !game.isGameOver)
+//                    // for testing game end
+//                    game.endGame(isGameOver: !game.isGameOver)
                     
                 } label: {
                     NavBarIcon(systemName: "arrow.counterclockwise.circle")
                 }
-                .disabled(game.gameOver)
-                .opacity(game.gameOver ? 0 : 1)
             }
             
             // Title
-            TitleBoard(title: "Brain Test")
+            TitleBoard(title: "Vision Test")
         }
     }
     
-    func resetGame() {
-        let impactMed = UIImpactFeedbackGenerator(style: .light)
-        impactMed.impactOccurred()
-        withAnimation(.easeInOut) {
-            game.resetGame()
+    var bottomBar: some View {
+        HStack {
+            // Instructions button
+            Button {
+                let impactMed = UIImpactFeedbackGenerator(style: .light)
+                impactMed.impactOccurred()
+                game.showInstructions = true
+            } label: {
+                NavBarIcon(systemName: "questionmark.circle")
+            }
+            
+            Spacer()
+            
+            // Deal-new-cards button
+            Button {
+                withAnimation {
+                    game.dealCards(3)
+                }
+            } label: {
+                CapsuleButton(text: "Deal 3 Cards", mainColor: Color.custom(.PsssdGreen), hPadding: 30)
+            }
+            .disabled(game.cardsInDeck < 1)
+            .opacity(game.cardsInDeck < 1 ? 0 : 1)
+        }
+        .padding(.top, 10)
+    }
+    
+    var statusColor: Color {
+        switch game.matchingStatus {
+        case .matching:
+            return .yellow
+        case .nonMatching:
+            return Color.custom(.PssssdRed)
+        case .none:
+            return Color.custom(.PssssdBlue)
         }
     }
+
 }
 
-struct BrainTestView_Previews: PreviewProvider {
+struct VisionTestView_Previews: PreviewProvider {
     static var previews: some View {
-        BrainTestView()
+        VisionTestView()
     }
 }
