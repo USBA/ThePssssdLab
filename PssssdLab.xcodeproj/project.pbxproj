@@ -46,6 +46,9 @@
 		02A5EC0428219F13009C8144 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EC0328219F13009C8144 /* GridLayout.swift */; };
 		02A5EC072821A736009C8144 /* BrainTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EC062821A736009C8144 /* BrainTestCard.swift */; };
 		02A5EC092821B6FC009C8144 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EC082821B6FC009C8144 /* CapsuleButton.swift */; };
+		02CBBAE428223AA0007EAB29 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 02CBBAE328223AA0007EAB29 /* PopupView */; };
+		02CBBAE628223CE6007EAB29 /* PopupTestSubjectUnlocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CBBAE528223CE6007EAB29 /* PopupTestSubjectUnlocked.swift */; };
+		02CBBAE828224B13007EAB29 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CBBAE728224B13007EAB29 /* BlurView.swift */; };
 		02DA7CCB280A70ED00FEAFD5 /* PssssdLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */; };
 		02DA7CCF280A70EF00FEAFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */; };
 		02DA7CD2280A70EF00FEAFD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DA7CD1280A70EF00FEAFD5 /* Preview Assets.xcassets */; };
@@ -91,6 +94,8 @@
 		02A5EC0328219F13009C8144 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		02A5EC062821A736009C8144 /* BrainTestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTestCard.swift; sourceTree = "<group>"; };
 		02A5EC082821B6FC009C8144 /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
+		02CBBAE528223CE6007EAB29 /* PopupTestSubjectUnlocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupTestSubjectUnlocked.swift; sourceTree = "<group>"; };
+		02CBBAE728224B13007EAB29 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		02DA7CC7280A70ED00FEAFD5 /* pssssd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pssssd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DA7CCA280A70ED00FEAFD5 /* PssssdLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PssssdLabApp.swift; sourceTree = "<group>"; };
 		02DA7CCE280A70EF00FEAFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CBBAE428223AA0007EAB29 /* PopupView in Frameworks */,
 				02633BB9280A79390057DB66 /* ConfettiSwiftUI in Frameworks */,
 				02633BB6280A78970057DB66 /* VideoPlayer in Frameworks */,
 			);
@@ -188,6 +194,8 @@
 				023325FC280DEE90000FC931 /* PanelButton.swift */,
 				02A5EC082821B6FC009C8144 /* CapsuleButton.swift */,
 				02A5EBE328214E03009C8144 /* HomeButton.swift */,
+				02CBBAE528223CE6007EAB29 /* PopupTestSubjectUnlocked.swift */,
+				02CBBAE728224B13007EAB29 /* BlurView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -315,6 +323,7 @@
 			packageProductDependencies = (
 				02633BB5280A78970057DB66 /* VideoPlayer */,
 				02633BB8280A79390057DB66 /* ConfettiSwiftUI */,
+				02CBBAE328223AA0007EAB29 /* PopupView */,
 			);
 			productName = PssssdLab;
 			productReference = 02DA7CC7280A70ED00FEAFD5 /* pssssd.app */;
@@ -347,6 +356,7 @@
 			packageReferences = (
 				02633BB4280A78970057DB66 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
 				02633BB7280A79390057DB66 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				02CBBAE228223AA0007EAB29 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = 02DA7CC8280A70ED00FEAFD5 /* Products */;
 			projectDirPath = "";
@@ -398,9 +408,11 @@
 				0254049D280B337100E4CC47 /* AboutView.swift in Sources */,
 				02A5EBE228214856009C8144 /* HomeView.swift in Sources */,
 				0254046D280B066100E4CC47 /* Nail.swift in Sources */,
+				02CBBAE628223CE6007EAB29 /* PopupTestSubjectUnlocked.swift in Sources */,
 				02A5EBEB2821729B009C8144 /* MemoryGame.swift in Sources */,
 				02633BC1280A86C20057DB66 /* ColorsAndFonts.swift in Sources */,
 				0254047D280B1D2B00E4CC47 /* NavBarIcon.swift in Sources */,
+				02CBBAE828224B13007EAB29 /* BlurView.swift in Sources */,
 				02A5EC072821A736009C8144 /* BrainTestCard.swift in Sources */,
 				02633BC8280AC05F0057DB66 /* WaitingRoomViewOLD.swift in Sources */,
 				02A5EBE428214E03009C8144 /* HomeButton.swift in Sources */,
@@ -469,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -523,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -539,7 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"PssssdLab/Preview Content\"";
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
@@ -552,6 +564,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +584,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"PssssdLab/Preview Content\"";
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
@@ -584,6 +597,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +651,14 @@
 				minimumVersion = 0.3.1;
 			};
 		};
+		02CBBAE228223AA0007EAB29 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -649,6 +671,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 02633BB7280A79390057DB66 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
 			productName = ConfettiSwiftUI;
+		};
+		02CBBAE328223AA0007EAB29 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02CBBAE228223AA0007EAB29 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -74,12 +74,14 @@ struct WaitingRoomView_Previews: PreviewProvider {
 struct TestSubjectsList: View {
     @ObservedObject var roomVM : WaitingRoomVM
     
+    @AppStorage("testSubjectAlienFrenUnlocked") var testSubjectAlienFrenUnlocked = false
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20) {
                 ForEach(roomVM.testSubjects, id: \.self) { testSubject in
                         GeometryReader { geometry in
-                            TestSubjectCard(testSubject: testSubject)
+                            TestSubjectCard(testSubject: testSubject, isUnlocked: checkUnlocked(testSubject: testSubject))
                                 .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 40) / -20), axis: (x: 0, y: 10.0, z: 0))
                         }
                         .frame(width: UIScreen.main.bounds.size.width - 100, height: UIScreen.main.bounds.size.width - 70, alignment: .center)
@@ -88,6 +90,14 @@ struct TestSubjectsList: View {
             .padding(.leading, 40)
             .padding(.trailing, 60)
             .padding(.vertical, 50)
+        }
+    }
+    
+    func checkUnlocked(testSubject: TestSubject) -> Bool {
+        if testSubject.videoName == "TestSubject10" {
+            return testSubjectAlienFrenUnlocked
+        } else {
+            return true
         }
     }
 

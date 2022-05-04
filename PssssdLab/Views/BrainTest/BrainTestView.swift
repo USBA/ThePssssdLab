@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
+import PopupView
 
 struct BrainTestView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -40,7 +42,7 @@ struct BrainTestView: View {
                         }
                         .padding(5)
                 }
-                .foregroundColor(Color.custom(.PsssdGreen))
+                .foregroundColor(Color.custom(.PssssdRed))
                 } else {
                     Spacer()
                 }
@@ -60,12 +62,17 @@ struct BrainTestView: View {
                     
                     Spacer()
                     
-                    // New Game button
-                    Button {
-                        resetGame()
-                    } label: {
-                        CapsuleButton(text: "New Game", mainColor: Color.custom(.PsssdGreen))
-                            .transition(.scale)
+                    ZStack{
+                        // New Game button
+                        Button {
+                            resetGame()
+                        } label: {
+                            CapsuleButton(text: "New Game", mainColor: Color.custom(.PsssdGreen))
+                                .transition(.scale)
+                        }
+                        
+                        // Confetti Cannon
+                        ConfettiCannon(counter: $game.confettiCounter, num: 50, radius: 500)
                     }
                     
                     Spacer()
@@ -81,6 +88,10 @@ struct BrainTestView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+        }
+        .popup(isPresented: $game.showTestSubjectUnlockPopup, type: .floater(), position: .top, animation: .spring(response: 0.4, dampingFraction: 0.7), autohideIn: 5, dragToDismiss: true, closeOnTap: false, closeOnTapOutside: false) {
+            PopupTestSubjectUnlocked(testSubject: TestSubject(videoName: "TestSubject10"))
+                .opacity(game.showTestSubjectUnlockPopup ? 1 : 0)
         }
         .onChange(of: game.gameOver) { gameOver in
             game.endGame(isGameOver: gameOver)
@@ -104,9 +115,15 @@ struct BrainTestView: View {
                 // reset button
                 Button {
                     resetGame()
+                    
+                    // for testing game end
+                    //game.endGame(isGameOver: !game.isGameOver)
+                    
                 } label: {
                     NavBarIcon(systemName: "arrow.counterclockwise.circle")
                 }
+                .disabled(game.gameOver)
+                .opacity(game.gameOver ? 0 : 1)
             }
             
             // Title

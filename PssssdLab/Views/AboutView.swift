@@ -70,7 +70,7 @@ struct AboutView: View {
                     .padding()
                     .padding(.vertical, 10)
                     .foregroundColor(Color.custom(.PssssdTextColor))
-                    .tint(Color.custom(.PssssdTextColor))
+                    .accentColor(Color.custom(.PssssdTextColor))
                 }
             }
         }
@@ -94,6 +94,7 @@ struct AboutView: View {
         }
         .padding(15)
     }
+    
 }
 
 struct AboutView_Previews: PreviewProvider {

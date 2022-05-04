@@ -32,7 +32,6 @@ struct HomeButton: View {
                         .shadow(color: borderColor, radius: 0, x: 0, y: 7)
                 )
             
-            
                 Image(imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)

@@ -11,23 +11,55 @@ import VideoPlayer
 
 struct TestSubjectCard: View {
     var testSubject: TestSubject
+    var isUnlocked: Bool
     
     var body: some View {
         VStack(spacing: 20) {
+            // MARK: Test subject image
             Image(uiImage: getThumbnail() ?? UIImage())
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: UIScreen.main.bounds.size.width - 130, height: UIScreen.main.bounds.size.width - 130, alignment: .center)
+                .overlay(
+                    // if test subject is not unlocked
+                    Group {
+                        if !isUnlocked {
+                            ZStack {
+                                BlurView(effect: .systemThickMaterial)
+                                Image(systemName: "lock.fill")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(50)
+                                    .foregroundColor(Color.gray.opacity(0.3))
+                            }
+                        }
+                    }
+                )
             
-                NavigationLink(destination: ClinicalTrialView(testSubject: testSubject)) {
-                    CapsuleButton(text: "Select", mainColor: Color.custom(.PsssdPink))
+            // MARK: Button
+            NavigationLink(destination: ClinicalTrialView(testSubject: testSubject)) {
+                CapsuleButton(text: "Select", mainColor: Color.custom(.PsssdPink))
+            }
+            .disabled(!isUnlocked)
+            .opacity(isUnlocked ? 1: 0)
+            .overlay(
+                // if test subject is not unlocked
+                Group {
+                    if !isUnlocked {
+                        Text("Score more than 10 in Brain Test to unlock")
+                            .font(Font.system(size: 15, design: .monospaced))
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.gray)
+                    }
                 }
+            )
+            
         }
-            .padding()
-            .padding(.bottom, 10)
-            .background(Color.custom(.PssssdCardColor))
-            .clipShape(RoundedRectangle(cornerRadius: 7.5))
-            .shadow(color: Color.black.opacity(0.2), radius: 0, x: 2, y: 2)
+        .padding()
+        .padding(.bottom, 10)
+        .background(Color.custom(.PssssdCardColor))
+        .clipShape(RoundedRectangle(cornerRadius: 7.5))
+        .shadow(color: Color.black.opacity(0.2), radius: 0, x: 2, y: 2)
         
     }
     
@@ -43,8 +75,8 @@ struct TestSubjectCard: View {
             let thumbnail = UIImage(cgImage: img)
             return thumbnail
         } catch {
-          print(error.localizedDescription)
-          return nil
+            print(error.localizedDescription)
+            return nil
         }
     }
     
@@ -52,6 +84,7 @@ struct TestSubjectCard: View {
 
 struct TestSubjectCard_Previews: PreviewProvider {
     static var previews: some View {
-        TestSubjectCard(testSubject: TestSubject(videoName: "TestSubject2"))
+        TestSubjectCard(testSubject: TestSubject(videoName: "TestSubject10"), isUnlocked: true)
+            .preferredColorScheme(.dark)
     }
 }

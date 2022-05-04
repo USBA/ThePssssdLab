@@ -16,7 +16,11 @@ class EmojiMemoryGame: ObservableObject {
     @Published private(set) var isGameOver = false
     @Published private(set) var isNewHighScore = false
     
+    @Published var confettiCounter = 0
+    @Published var showTestSubjectUnlockPopup = false
+    
     @AppStorage("brainTestHighScore") var brainTestHighScore = 0
+    @AppStorage("testSubjectAlienFrenUnlocked") var testSubjectAlienFrenUnlocked = false
     
     // MARK: - Assignment 5
     init() {
@@ -64,7 +68,16 @@ class EmojiMemoryGame: ObservableObject {
                         self.brainTestHighScore = self.score
                         self.isNewHighScore = true
                     }
+                    // unlock alien-fren test subject
+                    if !self.testSubjectAlienFrenUnlocked && self.score >= 10 {
+                        self.testSubjectAlienFrenUnlocked = true
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            self.showTestSubjectUnlockPopup = true
+                        }
+                    }
                 }
+                self.confettiCounter += 1
             }
         } else {
             withAnimation(.spring()) {

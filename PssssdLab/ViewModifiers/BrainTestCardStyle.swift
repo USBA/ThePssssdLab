@@ -28,22 +28,27 @@ struct BrainTestCardStyle: AnimatableModifier {
         ZStack {
             // MARK: Faced-Up Card
             Group {
-                RoundedRectangle(cornerRadius: cornerRadius).fill(Color.white)
-                RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: edgeLineWidth)
+                RoundedRectangle(cornerRadius: cornerRadius).fill(Color.custom(.PssssdCardColor))
+                RoundedRectangle(cornerRadius: 7.5).stroke(lineWidth: 1)
+                    .padding(5)
                 content
             }
             .opacity(isFaceUp ? 1 : 0)
             
             // MARK: Faced-Down Card
-            RoundedRectangle(cornerRadius: cornerRadius).fill(Color.custom(.PsssdGreen))
+            RoundedRectangle(cornerRadius: cornerRadius).fill()
                 .overlay(
-                    Image("PSSSSD-Logo")
-                        .resizable()
-                        .renderingMode(.template)
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color.custom(.PssssdCardColor))
-                        .padding(10)
-                    
+                    ZStack {
+                        Image("PSSSSD-Logo")
+                            .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fit)
+                            .padding(10)
+                        
+                        RoundedRectangle(cornerRadius: 7.5).stroke(lineWidth: 1)
+                            .padding(5)
+                    }
+                    .foregroundColor(Color.custom(.PssssdCardColor))
                 )
                 .opacity(isFaceUp ? 0 : 1)
         }
