@@ -30,73 +30,33 @@ struct VisionTestCard: View {
     var cardContent: some View {
         VStack {
             ForEach(0..<card.number.rawValue, id: \.self) { _ in
-                Group {
-                    switch card.shape {
-                    case .radio:
-                        if card.shading == .open {
-                            Image(systemName: "radio")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        } else if card.shading == .striped {
-                            Image(systemName: "radio.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .overlay(
-                                    Image(systemName: "radio")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(contentColor)
-                                )
-                        } else {
-                            Image(systemName: "radio.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
+                Image(systemName: "\(sfSymbolName())\(card.shading == .open ? "" : ".fill")")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(contentColor.opacity(card.shading == .striped ? 0.3 : 1))
+                    .overlay(
+                        Group {
+                            if card.shading == .striped {
+                                Image(systemName: sfSymbolName())
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .foregroundColor(contentColor)
+                            }
                         }
-                    case .eye:
-                        if card.shading == .open {
-                            Image(systemName: "eye")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        } else if card.shading == .striped {
-                            Image(systemName: "eye.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .overlay(
-                                    Image(systemName: "eye")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(contentColor)
-                                )
-                        } else {
-                            Image(systemName: "eye.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                    case .exclamation:
-                        if card.shading == .open {
-                            Image(systemName: "exclamationmark.triangle")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        } else if card.shading == .striped {
-                            Image(systemName: "exclamationmark.triangle.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .overlay(
-                                    Image(systemName: "exclamationmark.triangle")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(contentColor)
-                                )
-                        } else {
-                            Image(systemName: "exclamationmark.triangle.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        }
-                    }
-                }
+                    )
             }
         }
-        .foregroundColor(contentColor.opacity(contentOpacity))
+    }
+    
+    private func sfSymbolName() -> String {
+        switch card.shape {
+        case .radio:
+            return "radio"
+        case .eye:
+            return "eye"
+        case .exclamation:
+            return "exclamationmark.triangle"
+        }
     }
     
     private var contentColor: Color {
@@ -108,10 +68,6 @@ struct VisionTestCard: View {
         case .blue:
             return .blue
         }
-    }
-    
-    private var contentOpacity: Double {
-        return card.shading == .striped ? 0.3 : 1
     }
     
     var randomOffset: CGSize {

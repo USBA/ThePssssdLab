@@ -55,7 +55,7 @@ struct HomeView: View {
                     Spacer()
                     
                     NavigationLink(destination: WaitingRoomView()) {
-                        HomeButton(text: "Clinical Trail", mainColor: Color.custom(.PsssdPink), borderColor: Color.black.opacity(0.5), imageName: "Head", imageWidth: 65, imageOffsetY: -30)
+                        HomeButton(text: "Clinical Trial", mainColor: Color.custom(.PsssdPink), borderColor: Color.black.opacity(0.5), imageName: "Head", imageWidth: 65, imageOffsetY: -30)
                     }
                     
                     NavigationLink(destination: BrainTestView()) {
