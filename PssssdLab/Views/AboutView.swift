@@ -41,7 +41,7 @@ struct AboutView: View {
                             .font(Font.system(size: 20, design: .monospaced))
                             .fontWeight(.semibold)
                         
-                        Text("All the images and videos in this app are created by the official team. I just stole them from [Instagram](https://www.instagram.com/ThePossessedNFT/).")
+                        Text("All the images and videos of test subjects are created by the official team. I just stole them from [Instagram](https://www.instagram.com/ThePossessedNFT/).")
                             .font(Font.system(size: 20, design: .monospaced))
                             .fontWeight(.semibold)
                         
