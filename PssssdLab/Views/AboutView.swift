@@ -13,6 +13,7 @@ struct AboutView: View {
     let pssssdWebsite = URL(string: "https://pssssd.xyz/")!
     let pssssdInstagram = URL(string: "https://www.instagram.com/ThePossessedNFT/")!
     let twitterURL = URL(string: "https://twitter.com/metaUSB")!
+    let sourcecodeURL = URL(string: "https://github.com/USBA/ThePssssdLab")!
     
     var body: some View {
         ZStack {
@@ -40,7 +41,7 @@ struct AboutView: View {
                             .font(Font.system(size: 20, design: .monospaced))
                             .fontWeight(.semibold)
                         
-                        Text("All the images and videos in this app are created by the official team. I just stole them from [Instagram](https://www.instagram.com/ThePossessedNFT/).")
+                        Text("All the images and videos of test subjects are created by the official team. I just stole them from [Instagram](https://www.instagram.com/ThePossessedNFT/).")
                             .font(Font.system(size: 20, design: .monospaced))
                             .fontWeight(.semibold)
                         
@@ -59,10 +60,27 @@ struct AboutView: View {
                                 Text("Twitter:")
                                     .font(Font.system(size: 20, design: .monospaced))
                                     .fontWeight(.semibold)
+                                    .multilineTextAlignment(.leading)
                                 Text("@metaUSB")
                                     .font(Font.system(size: 20, design: .monospaced))
                                     .fontWeight(.semibold)
                                     .underline()
+                                    .multilineTextAlignment(.leading)
+                            }
+                        }
+                        
+                        // app's source code
+                        Link(destination: sourcecodeURL) {
+                            HStack {
+                                Text("Source code:")
+                                    .font(Font.system(size: 20, design: .monospaced))
+                                    .fontWeight(.semibold)
+                                    .multilineTextAlignment(.leading)
+                                Text("GitHub")
+                                    .font(Font.system(size: 20, design: .monospaced))
+                                    .fontWeight(.semibold)
+                                    .underline()
+                                    .multilineTextAlignment(.leading)
                             }
                         }
                         
@@ -70,7 +88,7 @@ struct AboutView: View {
                     .padding()
                     .padding(.vertical, 10)
                     .foregroundColor(Color.custom(.PssssdTextColor))
-                    .tint(Color.custom(.PssssdTextColor))
+                    .accentColor(Color.custom(.PssssdTextColor))
                 }
             }
         }
@@ -94,6 +112,7 @@ struct AboutView: View {
         }
         .padding(15)
     }
+    
 }
 
 struct AboutView_Previews: PreviewProvider {
