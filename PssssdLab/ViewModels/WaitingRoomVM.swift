@@ -18,6 +18,10 @@ class WaitingRoomVM: ObservableObject {
         TestSubject(videoName: "TestSubject7"),
         TestSubject(videoName: "TestSubject8"),
         TestSubject(videoName: "TestSubject9"),
-        TestSubject(videoName: "TestSubject10"),
+        TestSubject(
+            videoName: "TestSubject10",
+            creditText: "@alienfrens",
+            creditURL: URL(string: "https://twitter.com/alienfrens/status/1514061835292459009?s=21&t=lFrSXY0WupLP54EUKY2X1g")!
+        ),
     ]
 }

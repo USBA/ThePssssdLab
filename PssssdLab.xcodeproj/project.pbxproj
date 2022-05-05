@@ -10,6 +10,7 @@
 		020A3FEE2822B0D10099BF85 /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A3FED2822B0D10099BF85 /* SetGame.swift */; };
 		020A3FF02822B1DC0099BF85 /* VisionTestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A3FEF2822B1DC0099BF85 /* VisionTestVM.swift */; };
 		020A3FF22822B6A50099BF85 /* VisionTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A3FF12822B6A50099BF85 /* VisionTestCard.swift */; };
+		020F95DB2823BDEB0004729C /* CreditTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F95DA2823BDEB0004729C /* CreditTag.swift */; };
 		0218908D282020AB0072C725 /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0218908C282020AB0072C725 /* WaitingRoomView.swift */; };
 		023325FD280DEE90000FC931 /* PanelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023325FC280DEE90000FC931 /* PanelButton.swift */; };
 		0254046A280B061000E4CC47 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540469280B061000E4CC47 /* TestSubject.swift */; };
@@ -64,6 +65,7 @@
 		020A3FED2822B0D10099BF85 /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 		020A3FEF2822B1DC0099BF85 /* VisionTestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTestVM.swift; sourceTree = "<group>"; };
 		020A3FF12822B6A50099BF85 /* VisionTestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTestCard.swift; sourceTree = "<group>"; };
+		020F95DA2823BDEB0004729C /* CreditTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditTag.swift; sourceTree = "<group>"; };
 		0218908C282020AB0072C725 /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
 		023325FC280DEE90000FC931 /* PanelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelButton.swift; sourceTree = "<group>"; };
 		02540469280B061000E4CC47 /* TestSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubject.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				02A5EC082821B6FC009C8144 /* CapsuleButton.swift */,
 				02A5EBE328214E03009C8144 /* HomeButton.swift */,
 				029407802822768F00FBB9CF /* InstructionsView.swift */,
+				020F95DA2823BDEB0004729C /* CreditTag.swift */,
 				02CBBAE528223CE6007EAB29 /* PopupTestSubjectUnlocked.swift */,
 				02CBBAE728224B13007EAB29 /* BlurView.swift */,
 			);
@@ -419,6 +422,7 @@
 				029E00C52823039E004A5F61 /* IntToTime.swift in Sources */,
 				02A5EBF928217740009C8144 /* BrainTestView.swift in Sources */,
 				020A3FF02822B1DC0099BF85 /* VisionTestVM.swift in Sources */,
+				020F95DB2823BDEB0004729C /* CreditTag.swift in Sources */,
 				02A5EC092821B6FC009C8144 /* CapsuleButton.swift in Sources */,
 				0254046F280B066B00E4CC47 /* Bulb.swift in Sources */,
 				0254049D280B337100E4CC47 /* AboutView.swift in Sources */,

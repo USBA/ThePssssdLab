@@ -13,6 +13,8 @@ struct TestSubjectCard: View {
     var testSubject: TestSubject
     var isUnlocked: Bool
     
+    @State private var proceedToClinicalTrial = false
+    
     var body: some View {
         VStack(spacing: 20) {
             // MARK: Test subject image
@@ -37,8 +39,15 @@ struct TestSubjectCard: View {
                 )
             
             // MARK: Button
-            NavigationLink(destination: ClinicalTrialView(testSubject: testSubject)) {
-                CapsuleButton(text: "Select", mainColor: Color.custom(.PsssdPink))
+            NavigationLink(destination: ClinicalTrialView(testSubject: testSubject), isActive: $proceedToClinicalTrial) {
+                Button {
+                    let impactMed = UIImpactFeedbackGenerator(style: .light)
+                    impactMed.impactOccurred()
+                    proceedToClinicalTrial = true
+                } label: {
+                    CapsuleButton(text: "Select", mainColor: Color.custom(.PsssdPink))
+                }
+
             }
             .disabled(!isUnlocked)
             .opacity(isUnlocked ? 1: 0)
@@ -60,7 +69,21 @@ struct TestSubjectCard: View {
         .background(Color.custom(.PssssdCardColor))
         .clipShape(RoundedRectangle(cornerRadius: 7.5))
         .shadow(color: Color.black.opacity(0.2), radius: 0, x: 2, y: 2)
+        .overlay(creditTag, alignment: .topLeading
+        )
         
+    }
+    
+    var creditTag: some View {
+        Group {
+            if let creditText = testSubject.creditText, let creditURL = testSubject.creditURL, isUnlocked {
+                Link(destination: creditURL) {
+                    CreditTag(text: creditText)
+                        .rotationEffect(.degrees(-5))
+                        .offset(x: -5, y: -2.5)
+                }
+            }
+        }
     }
     
     func getThumbnail() -> UIImage? {
@@ -84,7 +107,7 @@ struct TestSubjectCard: View {
 
 struct TestSubjectCard_Previews: PreviewProvider {
     static var previews: some View {
-        TestSubjectCard(testSubject: TestSubject(videoName: "TestSubject10"), isUnlocked: true)
+        TestSubjectCard(testSubject: TestSubject(videoName: "TestSubject10", creditText: "@alienfrens", creditURL: URL(string: "https://www.twitter.com/alienfrens")), isUnlocked: true)
             .preferredColorScheme(.dark)
     }
 }

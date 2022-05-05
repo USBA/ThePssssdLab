@@ -22,14 +22,18 @@ struct HomeButton: View {
             Text(text)
                 .font(Font.system(size: 25, design: .default))
                 .fontWeight(.semibold)
-                .foregroundColor(Color.custom(.PssssdBackgroundColor))
+                .foregroundColor(mainColor)
                 .padding(.horizontal, 25)
-                .padding(.vertical, 12.5)
+                .padding(.vertical, 15)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .background(
                     RoundedRectangle(cornerRadius: 5)
-                        .fill(mainColor)
+                        .fill(Color.custom(.PssssdBackgroundColor))
                         .shadow(color: borderColor, radius: 0, x: 0, y: 7)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5).stroke(lineWidth: 5)
+                                .foregroundColor(mainColor)
+                        )
                 )
             
                 Image(imageName)
@@ -44,6 +48,6 @@ struct HomeButton: View {
 
 struct HomeButton_Previews: PreviewProvider {
     static var previews: some View {
-        HomeButton(text: "Button", mainColor: Color.custom(.PssssdInstrumentColor), borderColor: Color.black.opacity(0.5), imageName: "Eyes", imageWidth: 75, imageOffsetY: -20)
+        HomeButton(text: "Button", mainColor: Color.custom(.PsssdGreen), borderColor: Color.black.opacity(0.5), imageName: "Eyes", imageWidth: 75, imageOffsetY: -20)
     }
 }

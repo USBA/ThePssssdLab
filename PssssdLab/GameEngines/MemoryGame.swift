@@ -5,7 +5,7 @@
 //  Created by Umayanga Alahakoon on 2022-05-03.
 //
 
-import Foundation
+import SwiftUI
 
 struct MemoryGame<CardContent> where CardContent: Equatable {
     private(set) var cards: Array<Card>
@@ -37,6 +37,8 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
                     cards[chosenIndex].isMatched = true
                     cards[potentialMatchIndex].isMatched = true
                     score += 2
+                    let impactMed = UIImpactFeedbackGenerator(style: .soft)
+                    impactMed.impactOccurred()
                 } else {
                     // mismatch
                     score -= (cards[chosenIndex].hasSeen ? 1 : 0)

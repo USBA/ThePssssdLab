@@ -10,4 +10,6 @@ import SwiftUI
 struct TestSubject: Identifiable, Equatable, Hashable {
     var id = UUID()
     var videoName: String
+    var creditText: String?
+    var creditURL: URL?
 }

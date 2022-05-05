@@ -60,9 +60,7 @@ struct VisionTestView: View {
                     ZStack{
                         // New Game button
                         Button {
-                            withAnimation {
-                                game.newGame()
-                            }
+                            resetGame()
                         } label: {
                             CapsuleButton(text: "New Game", mainColor: Color.custom(.PsssdGreen))
                                 .transition(.scale)
@@ -119,9 +117,7 @@ struct VisionTestView: View {
                 
                 // reset button
                 Button {
-                    withAnimation {
-                        game.newGame()
-                    }
+                    resetGame()
                     
 //                    // for testing game end
 //                    game.endGame(isGameOver: !game.isGameOver)
@@ -129,6 +125,8 @@ struct VisionTestView: View {
                 } label: {
                     NavBarIcon(systemName: "arrow.counterclockwise.circle")
                 }
+                .disabled(game.gameOver)
+                .opacity(game.gameOver ? 0 : 1)
             }
             
             // Title
@@ -151,9 +149,7 @@ struct VisionTestView: View {
             
             // Deal-new-cards button
             Button {
-                withAnimation {
-                    game.dealCards(3)
-                }
+                dealCards(3)
             } label: {
                 CapsuleButton(text: "Deal 3 Cards", mainColor: Color.custom(.PsssdGreen), hPadding: 30)
             }
@@ -161,6 +157,22 @@ struct VisionTestView: View {
             .opacity(game.cardsInDeck < 1 ? 0 : 1)
         }
         .padding(.top, 10)
+    }
+    
+    func dealCards(_ number: Int) {
+        let impactMed = UIImpactFeedbackGenerator(style: .light)
+        impactMed.impactOccurred()
+        withAnimation {
+            game.dealCards(number)
+        }
+    }
+    
+    func resetGame() {
+        let impactMed = UIImpactFeedbackGenerator(style: .light)
+        impactMed.impactOccurred()
+        withAnimation {
+            game.newGame()
+        }
     }
     
     var statusColor: Color {

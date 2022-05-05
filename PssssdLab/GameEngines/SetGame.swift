@@ -14,9 +14,9 @@ struct SetGame {
     private(set) var gameOver: Bool = false
     
     let instructions: [String] = [
-        "Select matching 3 cards with same shape",
-        "Second guide.",
-        "Third guide"
+        "Select all the 3 matching cards with the same shape on them. The colors of the matching cards are different even though the shape is the same.",
+        "The deck contains a total of 81 unique cards. So there are 9 matching sets.",
+        "You will initially be given 12 cards. You can add the remaining cards to the screen at your own pace by tapping on the \"Deal 3 Cards\" button.",
     ]
     
     init() {
@@ -62,7 +62,11 @@ struct SetGame {
         if let selectedCardIndex = dealedCards.firstIndex(of: card), !dealedCards[selectedCardIndex].isMatched  {
             dealedCards[selectedCardIndex].isSelected.toggle()
         }
+        
+        // cards are matching
         if selectedCards.count > 2 && isCardsMatching {
+            let impactMed = UIImpactFeedbackGenerator(style: .soft)
+            impactMed.impactOccurred()
             markSelectedCardsAsMatched()
         }
         
@@ -120,8 +124,8 @@ struct SetGame {
     }
     
     enum ContentShape: CaseIterable, Hashable {
-        case hand
-        case ear
+        case radio
+        case eye
         case exclamation
     }
     

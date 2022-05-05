@@ -32,21 +32,41 @@ struct VisionTestCard: View {
             ForEach(0..<card.number.rawValue, id: \.self) { _ in
                 Group {
                     switch card.shape {
-                    case .hand:
+                    case .radio:
                         if card.shading == .open {
-                            Image(systemName: "hand.raised")
+                            Image(systemName: "radio")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
+                        } else if card.shading == .striped {
+                            Image(systemName: "radio.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .overlay(
+                                    Image(systemName: "radio")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .foregroundColor(contentColor)
+                                )
                         } else {
-                            Image(systemName: "hand.raised.fill")
+                            Image(systemName: "radio.fill")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                         }
-                    case .ear:
+                    case .eye:
                         if card.shading == .open {
                             Image(systemName: "eye")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
+                        } else if card.shading == .striped {
+                            Image(systemName: "eye.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .overlay(
+                                    Image(systemName: "eye")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .foregroundColor(contentColor)
+                                )
                         } else {
                             Image(systemName: "eye.fill")
                                 .resizable()
@@ -57,6 +77,16 @@ struct VisionTestCard: View {
                             Image(systemName: "exclamationmark.triangle")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
+                        } else if card.shading == .striped {
+                            Image(systemName: "exclamationmark.triangle.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .overlay(
+                                    Image(systemName: "exclamationmark.triangle")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .foregroundColor(contentColor)
+                                )
                         } else {
                             Image(systemName: "exclamationmark.triangle.fill")
                                 .resizable()
