@@ -10,10 +10,11 @@ import SwiftUI
 struct AboutView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    let pssssdWebsite = URL(string: "https://pssssd.xyz/")!
-    let pssssdInstagram = URL(string: "https://www.instagram.com/ThePossessedNFT/")!
-    let twitterURL = URL(string: "https://twitter.com/metaUSB")!
-    let sourcecodeURL = URL(string: "https://github.com/USBA/ThePssssdLab")!
+    let pssssdWebsite = "https://pssssd.xyz/"
+    let pssssdInstagram = "https://www.instagram.com/ThePossessedNFT/"
+    let normalTwitterURL = "https://twitter.com/usbakon"
+    let degenTwitterURL = "https://twitter.com/metaUSB"
+    let sourcecodeURL = "https://github.com/USBA/ThePssssdLab"
     
     var body: some View {
         ZStack {
@@ -28,64 +29,54 @@ struct AboutView: View {
                 navBar
                 
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 20) {
-                        Text("Hi,\nI'm an iOS developer from Sri Lanka and I've created this app just for fun.")
-                            .font(Font.system(size: 20, design: .monospaced))
-                            .fontWeight(.semibold)
+                    VStack(alignment: .leading, spacing: 5) {
                         
-                        Text("This app is inspired by an upcoming NFT project called [The Possessed](https://pssssd.xyz/). This is just an app created by a fan. So this is like a fan art, but an app.")
-                            .font(Font.system(size: 20, design: .monospaced))
-                            .fontWeight(.semibold)
+                        DescriptionCard(
+                            title: "IMPORTANT",
+                            descriptions: [
+                                "This app is inspired by an NFT project called The Possessed.",
+                                "This is NOT an official app from The Possessed team.",
+                                "This is just an app created by a fan. So this is like a fan art, but an app."
+                            ])
+                            .rotationEffect(.degrees(-3))
+                            .zIndex(10)
                         
-                        Text("I'm NOT a part of [The Possessed](https://pssssd.xyz/) team and this is NOT an official app from the team.")
-                            .font(Font.system(size: 20, design: .monospaced))
-                            .fontWeight(.semibold)
+                        DescriptionCard(
+                            title: "PRIVACY",
+                            descriptions: [
+                                "This app DOES NOT COLLECT any of your personal data.",
+                                "This app saves all of this game's data within your device.",
+                                "This app does not communicate with any server.",
+                                "None of your data goes out from your device."
+                            ])
+                            .rotationEffect(.degrees(3))
+                            .zIndex(9)
                         
-                        Text("All the images and videos of test subjects are created by the official team. I just stole them from [Instagram](https://www.instagram.com/ThePossessedNFT/).")
-                            .font(Font.system(size: 20, design: .monospaced))
-                            .fontWeight(.semibold)
+                        DescriptionCard(
+                            title: "THIS APP",
+                            descriptions: [
+                                "This is a native SwiftUI iOS app.",
+                                "Everything you see in this app (except the test-subject images/videos) is created completely programmatically.",
+                                "Entire source code of this app is public and you can view and inspect it by visiting the link below."
+                            ], links: [
+                                "Source code: GitHub": sourcecodeURL
+                            ])
+                            .rotationEffect(.degrees(-2))
+                            .zIndex(8)
                         
-                        Text("Have fun. TC.")
-                            .font(Font.system(size: 20, design: .monospaced))
-                            .fontWeight(.semibold)
-                        
-                        
-                        Rectangle()
-                            .frame(height: 1)
-                            .padding(.vertical, 10)
-                        
-                        // developer's twitter link
-                        Link(destination: twitterURL) {
-                            HStack {
-                                Text("Twitter:")
-                                    .font(Font.system(size: 20, design: .monospaced))
-                                    .fontWeight(.semibold)
-                                    .multilineTextAlignment(.leading)
-                                Text("@metaUSB")
-                                    .font(Font.system(size: 20, design: .monospaced))
-                                    .fontWeight(.semibold)
-                                    .underline()
-                                    .multilineTextAlignment(.leading)
-                            }
-                        }
-                        
-                        // app's source code
-                        Link(destination: sourcecodeURL) {
-                            HStack {
-                                Text("Source code:")
-                                    .font(Font.system(size: 20, design: .monospaced))
-                                    .fontWeight(.semibold)
-                                    .multilineTextAlignment(.leading)
-                                Text("GitHub")
-                                    .font(Font.system(size: 20, design: .monospaced))
-                                    .fontWeight(.semibold)
-                                    .underline()
-                                    .multilineTextAlignment(.leading)
-                            }
-                        }
+                        DescriptionCard(
+                            title: "DEVELOPER",
+                            descriptions: [
+                                "Hi,\nMy name is Umayanga Alahakoon (I know, it's a wired name).", "I'm a 23 years old iOS developer from Sri Lanka."
+                            ], links: [
+                                "Normal Twitter: @usbakon": normalTwitterURL,
+                                "Degen Twitter: @metaUSB": degenTwitterURL,
+                            ])
+                            .rotationEffect(.degrees(2))
+                            .zIndex(7)
                         
                     }
-                    .padding()
+                    .padding(30)
                     .padding(.vertical, 10)
                     .foregroundColor(Color.custom(.PssssdTextColor))
                     .accentColor(Color.custom(.PssssdTextColor))

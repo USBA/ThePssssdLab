@@ -108,7 +108,8 @@ struct BrainTestView: View {
         }
         // instructions sheet
         .popup(isPresented: $game.showInstructions, type: .default, position: .bottom, animation: .spring(response: 0.4, dampingFraction: 0.7), dragToDismiss: true, closeOnTap: false, closeOnTapOutside: true, backgroundColor: Color.black.opacity(0.3)) {
-            InstructionsView(instructions: game.instructions)
+            DescriptionCard(title: "INSTRUCTIONS", descriptions: game.instructions)
+                .padding(40)
                 .opacity(game.showInstructions ? 1 : 0)
         }
         // test-subject-unlocked notification
