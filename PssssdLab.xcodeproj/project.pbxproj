@@ -11,7 +11,13 @@
 		020A3FF02822B1DC0099BF85 /* VisionTestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A3FEF2822B1DC0099BF85 /* VisionTestVM.swift */; };
 		020A3FF22822B6A50099BF85 /* VisionTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A3FF12822B6A50099BF85 /* VisionTestCard.swift */; };
 		020F95DB2823BDEB0004729C /* CreditTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020F95DA2823BDEB0004729C /* CreditTag.swift */; };
+		0215F4D92829A008001134ED /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0215F4D72829A008001134ED /* Smoke.sks */; };
+		0215F4DA2829A008001134ED /* FireFlies.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0215F4D82829A008001134ED /* FireFlies.sks */; };
+		0215F4DC2829A076001134ED /* PossessGas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215F4DB2829A076001134ED /* PossessGas.swift */; };
+		0215F4DE2829A0C6001134ED /* BlessGas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215F4DD2829A0C6001134ED /* BlessGas.swift */; };
 		0218908D282020AB0072C725 /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0218908C282020AB0072C725 /* WaitingRoomView.swift */; };
+		021CFA39282A35540076274B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021CFA37282A35540076274B /* Assets.xcassets */; };
+		021CFA3B282A43B30076274B /* TestSubject10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 021CFA3A282A43B30076274B /* TestSubject10.mp4 */; };
 		023325FD280DEE90000FC931 /* PanelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023325FC280DEE90000FC931 /* PanelButton.swift */; };
 		0254046A280B061000E4CC47 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02540469280B061000E4CC47 /* TestSubject.swift */; };
 		0254046D280B066100E4CC47 /* Nail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254046C280B066100E4CC47 /* Nail.swift */; };
@@ -36,12 +42,11 @@
 		02633BC3280A88C30057DB66 /* BureauGrotRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 02633BC2280A88C30057DB66 /* BureauGrotRegular.otf */; };
 		02633BC8280AC05F0057DB66 /* WaitingRoomViewOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */; };
 		02633BCA280AC06D0057DB66 /* ClinicalTrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */; };
-		029407812822768F00FBB9CF /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029407802822768F00FBB9CF /* InstructionsView.swift */; };
+		029407812822768F00FBB9CF /* DescriptionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029407802822768F00FBB9CF /* DescriptionCard.swift */; };
 		029407832822781600FBB9CF /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029407822822781600FBB9CF /* Line.swift */; };
 		029E00C52823039E004A5F61 /* IntToTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E00C42823039E004A5F61 /* IntToTime.swift */; };
 		02A5EBE228214856009C8144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBE128214856009C8144 /* HomeView.swift */; };
 		02A5EBE428214E03009C8144 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBE328214E03009C8144 /* HomeButton.swift */; };
-		02A5EBE828215B4E009C8144 /* TestSubject10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02A5EBE728215B4D009C8144 /* TestSubject10.mp4 */; };
 		02A5EBEB2821729B009C8144 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBEA2821729B009C8144 /* MemoryGame.swift */; };
 		02A5EBED28217426009C8144 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBEC28217426009C8144 /* Array+Only.swift */; };
 		02A5EBF52821757C009C8144 /* BrainTestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5EBF42821757C009C8144 /* BrainTestVM.swift */; };
@@ -66,7 +71,13 @@
 		020A3FEF2822B1DC0099BF85 /* VisionTestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTestVM.swift; sourceTree = "<group>"; };
 		020A3FF12822B6A50099BF85 /* VisionTestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionTestCard.swift; sourceTree = "<group>"; };
 		020F95DA2823BDEB0004729C /* CreditTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditTag.swift; sourceTree = "<group>"; };
+		0215F4D72829A008001134ED /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
+		0215F4D82829A008001134ED /* FireFlies.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireFlies.sks; sourceTree = "<group>"; };
+		0215F4DB2829A076001134ED /* PossessGas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossessGas.swift; sourceTree = "<group>"; };
+		0215F4DD2829A0C6001134ED /* BlessGas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlessGas.swift; sourceTree = "<group>"; };
 		0218908C282020AB0072C725 /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
+		021CFA37282A35540076274B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		021CFA3A282A43B30076274B /* TestSubject10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject10.mp4; sourceTree = "<group>"; };
 		023325FC280DEE90000FC931 /* PanelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelButton.swift; sourceTree = "<group>"; };
 		02540469280B061000E4CC47 /* TestSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubject.swift; sourceTree = "<group>"; };
 		0254046C280B066100E4CC47 /* Nail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nail.swift; sourceTree = "<group>"; };
@@ -90,12 +101,11 @@
 		02633BC4280A88FB0057DB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		02633BC7280AC05E0057DB66 /* WaitingRoomViewOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewOLD.swift; sourceTree = "<group>"; };
 		02633BC9280AC06D0057DB66 /* ClinicalTrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialView.swift; sourceTree = "<group>"; };
-		029407802822768F00FBB9CF /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		029407802822768F00FBB9CF /* DescriptionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCard.swift; sourceTree = "<group>"; };
 		029407822822781600FBB9CF /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		029E00C42823039E004A5F61 /* IntToTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntToTime.swift; sourceTree = "<group>"; };
 		02A5EBE128214856009C8144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		02A5EBE328214E03009C8144 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
-		02A5EBE728215B4D009C8144 /* TestSubject10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSubject10.mp4; sourceTree = "<group>"; };
 		02A5EBEA2821729B009C8144 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		02A5EBEC28217426009C8144 /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 		02A5EBF42821757C009C8144 /* BrainTestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTestVM.swift; sourceTree = "<group>"; };
@@ -129,6 +139,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0215F4D628299FF3001134ED /* SpriteFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0215F4D82829A008001134ED /* FireFlies.sks */,
+				0215F4D72829A008001134ED /* Smoke.sks */,
+				021CFA37282A35540076274B /* Assets.xcassets */,
+			);
+			path = SpriteFiles;
+			sourceTree = "<group>";
+		};
 		0221768E28211DE7004D6F97 /* ClinicalTrial */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,10 +226,12 @@
 				023325FC280DEE90000FC931 /* PanelButton.swift */,
 				02A5EC082821B6FC009C8144 /* CapsuleButton.swift */,
 				02A5EBE328214E03009C8144 /* HomeButton.swift */,
-				029407802822768F00FBB9CF /* InstructionsView.swift */,
+				029407802822768F00FBB9CF /* DescriptionCard.swift */,
 				020F95DA2823BDEB0004729C /* CreditTag.swift */,
 				02CBBAE528223CE6007EAB29 /* PopupTestSubjectUnlocked.swift */,
 				02CBBAE728224B13007EAB29 /* BlurView.swift */,
+				0215F4DB2829A076001134ED /* PossessGas.swift */,
+				0215F4DD2829A0C6001134ED /* BlessGas.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -239,7 +261,7 @@
 				0254048D280B307C00E4CC47 /* TestSubject7.mp4 */,
 				0254048E280B307D00E4CC47 /* TestSubject8.mp4 */,
 				0254048F280B307D00E4CC47 /* TestSubject9.mp4 */,
-				02A5EBE728215B4D009C8144 /* TestSubject10.mp4 */,
+				021CFA3A282A43B30076274B /* TestSubject10.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -287,6 +309,7 @@
 				02540466280B059200E4CC47 /* ViewModels */,
 				02540465280B058B00E4CC47 /* Views */,
 				02633BBF280A80600057DB66 /* Videos */,
+				0215F4D628299FF3001134ED /* SpriteFiles */,
 				02A5EBFC28218BEA009C8144 /* ViewModifiers */,
 				024A8098280A778100DDC58D /* Fonts */,
 				02633BBA280A7B690057DB66 /* Support */,
@@ -391,14 +414,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				02540493280B307E00E4CC47 /* TestSubject2.mp4 in Resources */,
+				021CFA3B282A43B30076274B /* TestSubject10.mp4 in Resources */,
 				02540494280B307E00E4CC47 /* TestSubject3.mp4 in Resources */,
 				02540495280B307E00E4CC47 /* TestSubject4.mp4 in Resources */,
 				02540496280B307E00E4CC47 /* TestSubject7.mp4 in Resources */,
 				02540497280B307E00E4CC47 /* TestSubject8.mp4 in Resources */,
 				02540498280B307E00E4CC47 /* TestSubject9.mp4 in Resources */,
-				02A5EBE828215B4E009C8144 /* TestSubject10.mp4 in Resources */,
+				021CFA39282A35540076274B /* Assets.xcassets in Resources */,
 				02540499280B307E00E4CC47 /* TestSubject5.mp4 in Resources */,
 				0254049A280B307E00E4CC47 /* TestSubject1.mp4 in Resources */,
+				0215F4DA2829A008001134ED /* FireFlies.sks in Resources */,
+				0215F4D92829A008001134ED /* Smoke.sks in Resources */,
 				0254049B280B307E00E4CC47 /* TestSubject6.mp4 in Resources */,
 				02DA7CD2280A70EF00FEAFD5 /* Preview Assets.xcassets in Resources */,
 				02633BC3280A88C30057DB66 /* BureauGrotRegular.otf in Resources */,
@@ -429,7 +455,8 @@
 				02A5EBE228214856009C8144 /* HomeView.swift in Sources */,
 				0254046D280B066100E4CC47 /* Nail.swift in Sources */,
 				029407832822781600FBB9CF /* Line.swift in Sources */,
-				029407812822768F00FBB9CF /* InstructionsView.swift in Sources */,
+				029407812822768F00FBB9CF /* DescriptionCard.swift in Sources */,
+				0215F4DE2829A0C6001134ED /* BlessGas.swift in Sources */,
 				020A3FEE2822B0D10099BF85 /* SetGame.swift in Sources */,
 				02CBBAE628223CE6007EAB29 /* PopupTestSubjectUnlocked.swift in Sources */,
 				02A5EBEB2821729B009C8144 /* MemoryGame.swift in Sources */,
@@ -439,6 +466,7 @@
 				020A3FF22822B6A50099BF85 /* VisionTestCard.swift in Sources */,
 				02A5EC072821A736009C8144 /* BrainTestCard.swift in Sources */,
 				02633BC8280AC05F0057DB66 /* WaitingRoomViewOLD.swift in Sources */,
+				0215F4DC2829A076001134ED /* PossessGas.swift in Sources */,
 				02A5EBE428214E03009C8144 /* HomeButton.swift in Sources */,
 				02540479280B14B500E4CC47 /* WaitingRoomVM.swift in Sources */,
 				02F77A9B28211EEF00ACAE16 /* TestSubjectCard.swift in Sources */,
